@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(240, 218, 209);
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    background-color: lightyellow;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* height: 100px; */
+}
+
+.logo {
+    background-color: lightcoral;
+}
+
+.logo>a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: lightyellow;
+}
+
+.menu_icon>a {
+    display: block;
+    background-color: lightsalmon;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navbar {
+    /* margin-left: auto; */
+}
+
+.navbar>ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+
+}
+
+@media screen and (max-width: 991px){
+    
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .navbar{
+        width:100%;
+        display: none;
+    }
+
+    .navbar>ul{
+        flex-direction: column;
+    }
+    .navbar>ul>li>a {
+        background-color: cornsilk;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        color:white;
+        border-bottom:1px solid white;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    .menu_icon {
+        display: none;
+    }
+
+    .navbar>ul>li>a {
+        display: block;
+        padding: 10px;
+        background-color: peachpuff;
+        text-decoration: none;
+    }
+} /* media 992 end */
+
+.banner {
+    background-color: rgb(243, 243, 192);
+    height: 100px;
+    /* height: calc(100vh - 78px); */
+    /* viewport height 可視區域 扣掉 navbar高度 */
+}
+
+.shortcut-list{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.shortcut-list>li{
+    background-color: lightgreen;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    line-height: 60px;
+    border-left: 2px solid white;
+}
+
+.shortcut-list>li:first-child{
+    border: none;
+
+}
+
+.shortcut-list>li>a{
+    display: block;
+    text-decoration: none;
+}
+.shortcut-list>li>a:hover{
+    background-color: green;
+}
+
+.photo{
+    line-height: 300px;
+    background-color: pink;
+}
+@media screen and (min-width: 992px){
+    .area-content{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    .area-content>div{
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .area-content:nth-child(odd)>.photo{
+        order:1;
+    }
+    /*  選到.are-content項下的odd奇數孩子(even偶數) 的photo，讓他順序變成1(跑到後面)  */
+}
