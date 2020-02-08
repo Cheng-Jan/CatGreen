@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 body {
-  background-color: black;
+  background-color: white;
   margin: 0px;
 }
 
@@ -83,7 +83,20 @@ body {
   /* viewport height 可視區域 扣掉 navbar高度 */
 }
 
+@media (max-width: 576px) {
+  .banner {
+    height: auto;
+  }
+}
+
+.banner .col-sm-8 img {
+  width: 92%;
+  height: 90%;
+}
+
 .banner .banner_text {
+  width: 100%;
+  height: 100%;
   background-color: #fbfad7;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -91,7 +104,7 @@ body {
   text-orientation: upright;
   color: black;
   font-family: Noto Sans TC, 微軟正黑體;
-  font-size: 19px;
+  font-size: 1.2rem;
   letter-spacing: 6px;
   padding: 90px;
 }
@@ -250,6 +263,7 @@ body {
   background-color: #E7FAEB;
   margin-top: 106px;
   height: calc(100vh - 106px);
+  overflow: hidden;
   /* viewport height 可視區域 扣掉 navbar高度 */
 }
 
@@ -269,5 +283,79 @@ body {
   font-size: 21px;
   font-weight: bold;
   text-align: center;
+}
+
+.nav-link {
+  color: #494646;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+
+.nav-pills .nav-item {
+  width: 25%;
+}
+
+.nav-pills .nav-item .nav-link {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-pills .nav-item .nav-link.active {
+  color: cadetblue;
+  background-color: #fbfad7;
+}
+
+.tab-content .container {
+  padding: 0px;
+}
+
+.tab-pane p {
+  display: block;
+  height: 400px;
+}
+
+.menu_content {
+  background-color: #fbfad7;
+}
+
+.nav-item a:hover {
+  color: cadetblue;
+}
+
+.nav-item a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #E7FAEB;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.nav-item a:hover:before,
+.nav-item a:focus:before,
+.nav-item a:active:before {
+  left: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

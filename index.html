@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="style/style.css">
     <!-- <link rel="stylesheet" href="style/notosanstc.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;display=swap" rel="stylesheet" />
 
 </head>
 
@@ -98,19 +98,21 @@
     <div class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 banner_img">
-                    <img src="images/index.jpg" alt="貓綠色首圖" width="100%" height="100%">
+                <div class="col-sm-8">
+                    <img src="images/index.jpg" alt="貓綠色首圖">
                 </div>
-                <div class="banner_text col-sm-4">
-                    <div>這世界流動的太快</div>
-                    <br>
-                    <div>只有美好的事物能讓人感到溫暖平靜</div>
-                    <br>
-                    <div>肥貓的發懶日常，療癒每一刻時光</div>
-                    <br>
-                    <div>讓我們一起</div>
-                    <br>
-                    <div>好好生活 / 純粹美好</div>
+                <div class="col-sm-4">
+                    <div class="banner_text">
+                        <div>這世界流動的太快</div>
+                        <br>
+                        <div>只有美好的事物能讓人感到溫暖平靜</div>
+                        <br>
+                        <div>肥貓的發懶日常，療癒每一刻時光</div>
+                        <br>
+                        <div>讓我們一起</div>
+                        <br>
+                        <div>好好生活 / 純粹美好</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +127,7 @@
     <!------------------------------------------>
 
     <!-- <div class="heading">Scroll to see more</div> -->
-    <div class="swiper-container">
+    <div class="swiper-container illustration_swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="container-general">
@@ -220,7 +222,82 @@
     <!------------------------------------------>
     <!-----------  store 商店  start  ----------->
     <!------------------------------------------>
-    
+    <div class="container">
+        <br>
+        <br>
+        <div class="store_title">創作小物</div>
+        <br>
+        <!-- Nav pills -->
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#menu1">包包提袋</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#menu2">配件飾品</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#menu3">文具卡片</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#menu4">美妝工具</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="menu1" class="container tab-pane active"><br>
+                <div class="menu_content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="bag_left col-sm-7">
+                                <!-- 手提袋 Swiper -->
+                                <div class="swiper-container tabs_swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">Slide 1</div>
+                                        <div class="swiper-slide">Slide 2</div>
+                                        <div class="swiper-slide">Slide 3</div>
+                                    </div>
+                                    <!-- 手提袋 Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                    <!-- 手提袋 Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        
+                            <div class="bag_right col-sm-5">
+                                <h3>商品介紹</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt utlabore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+                <div class="menu_content">
+                    <h3>Menu 1</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+            <div id="menu3" class="container tab-pane fade"><br>
+                <div class="menu_content">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam.</p>
+                </div>
+            </div>
+            <div id="menu4" class="container tab-pane fade"><br>
+                <div class="menu_content">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!------------------------------------------>
     <!-----------  store 商店   end   ----------->
     <!------------------------------------------>
