@@ -285,6 +285,10 @@ body {
   text-align: center;
 }
 
+:root {
+  --swiper-theme-color: #2a504b;
+}
+
 .nav-link {
   color: #494646;
   margin: auto;
