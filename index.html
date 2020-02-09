@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="style/catgreen.css"> -->
     <link rel="stylesheet" href="js/bootstrap-4.2.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
     <!-- <link rel="stylesheet" href="style/notosanstc.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;display=swap" rel="stylesheet" />
@@ -254,8 +255,8 @@
                                 <div class="swiper-container tabs_swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide"><img src="images/bag1.jpg" width="100%" alt=""></div>
-                                        <div class="swiper-slide"><img src="images/bag1.jpg" width="100%" alt=""></div>
-                                        <div class="swiper-slide"><img src="images/bag1.jpg" width="100%" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/bag2.jpg" width="100%" alt=""></div>
+                                        <div class="swiper-slide"><img src="images/bag3.jpg" width="100%" alt=""></div>
                                     </div>
                                     <!-- 手提袋 Add Pagination -->
                                     <div class="swiper-pagination"></div>
@@ -276,7 +277,12 @@
                                 <p>插畫帆布飲料袋 / 100%純棉胚布8安</p>
                                 <h5>商品尺寸</h5>
                                 <p>18x19cm / 底寬約8cm / 提帶總長約26cm</p>
-                                <button onclick="bag_click()" type="button" class="btn btn-outline-success">Buy it</button>
+                                <div class="menu_buttons">
+                                    <button onclick="bag_click()" type="button" class="btn btn-outline-success">Buy
+                                        it</button>
+                                    <button onclick="bag_click_more()" type="button"
+                                        class="btn btn-outline-success">更多手提袋 <i class="fas fa-arrow-circle-right"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -284,23 +290,180 @@
             </div>
             <div id="menu2" class="container tab-pane fade"><br>
                 <div class="menu_content">
-                    <h3>Menu 1</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="store_top_content">
+                                    <img src="images/menu2-1.jpg" width="100%" alt="">
+                                </div>
+                                <div class="store_bottom_content">
+                                    <h4>我的小星球 / 胖貓胸章</h4>
+                                    <br>
+                                    <h5>商品介紹</h5>
+                                    <p>蒐集那麼多那麼多的星星們，只是為了讓你看見，這樣閃閃發亮的我啊！穿越了數萬光年的星光，終究還是會堅定的，抵達你的眼眸和心房＿</p>
+                                    <h5>商品尺寸</h5>
+                                    <p>4.4cm（每個胸章皆有背卡＆糖果袋裝）</p>
+                                </div>
+                                <div class="menu_buttons">
+                                    <button onclick="menu2_click1()" type="button" class="btn btn-outline-success">Buy it</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="store_top_content">
+                                    <img src="images/menu2-2.jpg" width="100%" alt="">
+                                </div>
+                                <div class="store_bottom_content">
+                                    <h4>備忘的回憶 / 胖貓胸章</h4>
+                                    <br>
+                                    <h5>商品介紹</h5>
+                                    <p>是為了被記起，還是準備被遺忘？打撈記憶中那些閃爍光點，卻沒發現雨已經開始下了，很快這些那些全部都會被雨淹沒。</p>
+                                    <h5>商品尺寸</h5>
+                                    <p>4.4cm（每個胸章皆有背卡＆糖果袋裝）</p>
+                                </div>
+                                <div class="menu_buttons">
+                                    <button onclick="menu2_click2()" type="button" class="btn btn-outline-success">Buy it</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="store_top_content">
+                                    <img src="images/menu2-3.jpg" width="100%" alt="">
+                                </div>
+                                <div class="store_bottom_content">
+                                    <h4>午後的草原 / 胖貓胸章</h4>
+                                    <br>
+                                    <h5>商品介紹</h5>
+                                    <p>不想說話的時候，就這樣找個地方靜靜地窩著。發呆一個下午，好像就會又重新充滿能量動力。「別擔心，我會在這裡陪你，想待多久就待多久。」</p>
+                                    <h5>商品尺寸</h5>
+                                    <p>4.4cm（每個胸章皆有背卡＆糖果袋裝）</p>
+                                </div>
+                                <div class="menu_buttons">
+                                    <button onclick="menu2_click3()" type="button" class="btn btn-outline-success">Buy it</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_buttons">
+                        <button onclick="menu2_click_more()" type="button" class="btn btn-outline-success">更多配件飾品 <i class="fas fa-arrow-circle-right"></i></button>
+                    </div>
                 </div>
             </div>
             <div id="menu3" class="container tab-pane fade"><br>
                 <div class="menu_content">
-                    <h3>Menu 2</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="store_top_content">
+                                    <img src="images/menu3-1.jpg" width="100%" alt="">
+                                </div>
+                                <div class="store_bottom_content">
+                                    <h4>一起賞楓去 / 明信片</h4>
+                                    <br>
+                                    <h5>商品介紹</h5>
+                                    <p>又是賞楓的季節，好想買張機票就飛去京都！楓葉在胖貓身上好像翅膀快帶我飛去京都～</p>
+                                    <h5>商品資訊</h5>
+                                    <p>插畫明信片 / 300P水彩紙 / 雙面印刷</p>
+                                </div>
+                                <div class="menu_buttons">
+                                    <button onclick="menu3_click1()" type="button" class="btn btn-outline-success">Buy it</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="store_top_content">
+                                    <img src="images/menu3-2.jpg" width="88%" alt="">
+                                </div>
+                                <div class="store_bottom_content">
+                                    <h4>胖貓甜蜜蜜 / 割型防水貼紙</h4>
+                                    <br>
+                                    <h5>商品介紹</h5>
+                                    <p>胖貓甜蜜蜜，一起幸福生活～</p>
+                                    <h5>商品資訊</h5>
+                                    <p>插畫割型防水貼紙＿日式和紙貼紙 / 透明霧面貼紙</p>
+                                </div>
+                                <div class="menu_buttons">
+                                    <button onclick="menu3_click2()" type="button" class="btn btn-outline-success">Buy it</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="store_top_content">
+                                    <img src="images/menu3-3.jpg" width="100%" alt="">
+                                </div>
+                                <div class="store_bottom_content">
+                                    <h4>胖貓毛線球 / 紙膠帶2.5cm</h4>
+                                    <br>
+                                    <h5>商品介紹</h5>
+                                    <p>一起和胖貓們玩毛線球吧！丟丟撿撿好開心啊～</p>
+                                    <h5>商品資訊</h5>
+                                    <p>紙膠帶 / 日本和紙-適合書寫</p>
+                                    <p>尺寸-寬度2.5cm/長度10m/循環30cm</p>
+                                </div>
+                                <div class="menu_buttons">
+                                    <button onclick="menu3_click3()" type="button" class="btn btn-outline-success">Buy it</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_buttons">
+                        <button onclick="menu3_click_more()" type="button" class="btn btn-outline-success">更多文具卡片 <i class="fas fa-arrow-circle-right"></i></button>
+                    </div>
                 </div>
             </div>
             <div id="menu4" class="container tab-pane fade"><br>
                 <div class="menu_content">
-                    <h3>Menu 2</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="store_top_content">
+                                    <img src="images/menu4-1.jpg" width="100%" alt="">
+                                </div>
+                                <div class="store_bottom_content">
+                                    <h4>一起賞楓去 / 隨身圓鏡</h4>
+                                    <br>
+                                    <h5>商品介紹</h5>
+                                    <p>又是賞楓的季節，好想買張機票就飛去京都！楓葉在胖貓身上好像翅膀快帶我飛去京都～</p>
+                                    <h5>商品資訊</h5>
+                                    <p>隨身圓鏡 / 白色塑膠（一面正常鏡+一面放大鏡）</p>
+                                </div>
+                                <div class="menu_buttons">
+                                    <button onclick="menu4_click1()" type="button" class="btn btn-outline-success">Buy it</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="store_top_content">
+                                    <img src="images/menu4-2.jpg" width="100%" alt="">
+                                </div>
+                                <div class="store_bottom_content">
+                                    <h4>花間的思念 / 隨身圓鏡</h4>
+                                    <br>
+                                    <h5>商品介紹</h5>
+                                    <p>那天，草原上有風翻滾而那連天的草被吹散了我們，只剩下寫在花上的思念，飄落淡淡的香氣。</p>
+                                    <h5>商品資訊</h5>
+                                    <p>隨身圓鏡 / 白色塑膠（一面正常鏡+一面放大鏡）</p>
+                                </div>
+                                <div class="menu_buttons">
+                                    <button onclick="menu4_click2()" type="button" class="btn btn-outline-success">Buy it</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="store_top_content">
+                                    <img src="images/menu4-3.jpg" width="90%" alt="">
+                                </div>
+                                <div class="store_bottom_content">
+                                    <h4>花夢 / 隨身方鏡</h4>
+                                    <br>
+                                    <h5>商品介紹</h5>
+                                    <p>花束背後沒說出口的話，就好好放在心中吧！</p>
+                                    <h5>商品資訊</h5>
+                                    <p>隨身方鏡 / 白色磨砂霧面</p>
+                                </div>
+                                <div class="menu_buttons">
+                                    <button onclick="menu4_click3()" type="button" class="btn btn-outline-success">Buy it</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_buttons">
+                        <button onclick="menu4_click_more()" type="button" class="btn btn-outline-success">更多美妝工具 <i class="fas fa-arrow-circle-right"></i></button>
+                    </div>
                 </div>
             </div>
         </div>

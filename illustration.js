@@ -31,8 +31,66 @@ var swiper2 = new Swiper('.tabs_swiper', {
     },
   });
 
-  // <------ 商店 > 手提袋 button ------>
+  // <------ 商店 > 手提袋 button 連結網址 ------>
 
   function bag_click() {
     window.open("https://www.pinkoi.com/product/Sx7dcuxY");
+  }
+
+  function bag_click_more() {
+    window.open("https://www.pinkoi.com/store/yourscat?category=1");
+  }
+
+  // <------ 商店 > 配件飾品 button 連結網址 ------>
+
+  function menu2_click1() {
+    window.open("https://www.pinkoi.com/product/fH27kww6");
+  }
+
+  function menu2_click2() {
+    window.open("https://www.pinkoi.com/product/MCH32DFR");
+  }
+
+  function menu2_click3() {
+    window.open("https://www.pinkoi.com/product/eNfDRbLr");
+  }
+
+  function menu2_click_more() {
+    window.open("https://www.pinkoi.com/store/yourscat?category=2");
+  }
+  
+  // <------ 商店 > 文具卡片 button 連結網址 ------>
+
+  function menu3_click1() {
+    window.open("https://www.pinkoi.com/product/dqcSTVrt");
+  }
+
+  function menu3_click2() {
+    window.open("https://www.pinkoi.com/product/RSBhKAXU");
+  }
+
+  function menu3_click3() {
+    window.open("https://www.pinkoi.com/product/z9HSD3kV");
+  }
+
+  function menu3_click_more() {
+    window.open("https://www.pinkoi.com/store/yourscat?category=3");
+  }
+
+  // <------ 商店 > 美妝工具 button 連結網址 ------>
+
+  function menu4_click1() {
+    window.open("https://www.pinkoi.com/product/dHPaL7Av");
+  }
+
+  function menu4_click2() {
+    window.open("https://www.pinkoi.com/product/svWDZfbD");
+  }
+
+  function menu4_click3() {
+    window.open("https://hk.pinkoi.com/product/qBRnWcCq");
+  }
+  
+  function menu4_click_more() {
+    window.open("https://www.pinkoi.com/store/yourscat?category=14");
   }

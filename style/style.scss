@@ -385,12 +385,18 @@ body {
     --swiper-theme-color: white;
 }
 
+.menu_buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
 // button 顏色微調
 .btn-outline-success {
-    position: absolute;
+    // position: absolute;
     color: cadetblue;
     border-color: cadetblue;
-    left: 39%;
+    // left: 39%;
 
     &:hover {
         background-color: cadetblue;
@@ -500,9 +506,6 @@ body {
     right: 0;
 }
 
-.bag_right {
-    position: relative;
 
-}
 
 // ------------ store 商店  end ------------- //
