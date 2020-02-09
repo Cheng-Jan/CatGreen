@@ -367,7 +367,8 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .menu_content .col-sm-4 {
@@ -431,5 +432,39 @@ body {
   height: calc(100vh - 99px);
   background-color: #e7faeb;
   background-image: linear-gradient(199deg, #e7faeb 49%, #fff9ef 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_me .container {
+  background-color: #fff;
+  width: 50%;
+  height: 70%;
+}
+
+.contact_me .container .row {
+  width: 100%;
+  height: 100%;
+}
+
+.contact_me .container .row .col-7 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/15.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact_me .container .row .col-5 {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
