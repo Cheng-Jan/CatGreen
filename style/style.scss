@@ -373,9 +373,45 @@ body {
 
 // ----------- store 商店  start ------------ //
 
+.store_title {
+    color: cadetblue;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+// arrow 顏色 //
 :root {
-    --swiper-theme-color: #2a504b;
-  }
+    --swiper-theme-color: white;
+}
+
+// button 顏色微調
+.btn-outline-success {
+    position: absolute;
+    color: cadetblue;
+    border-color: cadetblue;
+    left: 39%;
+
+    &:hover {
+        background-color: cadetblue;
+        border-color: cadetblue;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:not(:disabled):not(.disabled):active{
+        background-color: cadetblue;
+        border-color: cadetblue;
+    }
+}
+
+.menu_content .row {
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-link {
     color: rgb(73, 70, 70);
     margin: auto;
@@ -417,7 +453,7 @@ body {
 .tab-pane p {
     // height: calc(100vh - 106px - 38px - 40px);
     display: block;
-    height: 400px;
+    // height: 400px;
 }
 
 .menu_content {
@@ -426,7 +462,7 @@ body {
 
 
 .nav-item a:hover {
-    color: cadetblue;
+    color: rgb(73, 70, 70);
 }
 
 // menu的hover效果 //
@@ -462,6 +498,11 @@ body {
 .nav-item a:active:before {
     left: 0;
     right: 0;
+}
+
+.bag_right {
+    position: relative;
+
 }
 
 // ------------ store 商店  end ------------- //

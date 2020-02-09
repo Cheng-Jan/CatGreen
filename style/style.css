@@ -285,8 +285,46 @@ body {
   text-align: center;
 }
 
+.store_title {
+  color: cadetblue;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 :root {
-  --swiper-theme-color: #2a504b;
+  --swiper-theme-color: white;
+}
+
+.btn-outline-success {
+  position: absolute;
+  color: cadetblue;
+  border-color: cadetblue;
+  left: 39%;
+}
+
+.btn-outline-success:hover {
+  background-color: cadetblue;
+  border-color: cadetblue;
+}
+
+.btn-outline-success:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active {
+  background-color: cadetblue;
+  border-color: cadetblue;
+}
+
+.menu_content .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-link {
@@ -317,7 +355,6 @@ body {
 
 .tab-pane p {
   display: block;
-  height: 400px;
 }
 
 .menu_content {
@@ -325,7 +362,7 @@ body {
 }
 
 .nav-item a:hover {
-  color: cadetblue;
+  color: #494646;
 }
 
 .nav-item a {
@@ -361,5 +398,9 @@ body {
 .nav-item a:active:before {
   left: 0;
   right: 0;
+}
+
+.bag_right {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

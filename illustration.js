@@ -30,3 +30,9 @@ var swiper2 = new Swiper('.tabs_swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // <------ 商店 > 手提袋 button ------>
+
+  function bag_click() {
+    window.open("https://www.pinkoi.com/product/Sx7dcuxY");
+  }
