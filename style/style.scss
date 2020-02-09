@@ -80,8 +80,8 @@ body {
 
 .banner {
     background-color: #E7FAEB;
-    margin-top: 106px;
-    height: calc(100vh - 106px);
+    margin-top: 99px;
+    height: calc(100vh - 99px);
     /* viewport height 可視區域 扣掉 navbar高度 */
 
     @media (max-width: 576px) {
@@ -342,8 +342,8 @@ body {
 
 .aboutMe {
     background-color: #E7FAEB;
-    margin-top: 106px;
-    height: calc(100vh - 106px);
+    margin-top: 99px;
+    height: calc(100vh - 99px);
     overflow: hidden;
     /* viewport height 可視區域 扣掉 navbar高度 */
 
@@ -373,23 +373,23 @@ body {
 
 // ----------- store 商店  start ------------ //
 
-.store_title {
-    color: cadetblue;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center;
+
+.store_font {
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+    
 }
+// .store_title {
+//     color: cadetblue;
+//     font-size: 1.4rem;
+//     font-weight: bold;
+//     text-align: center;
+// }
 
 // arrow 顏色 //
 :root {
     --swiper-theme-color: white;
 }
 
-.menu_buttons {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-}
 
 // button 顏色微調
 .btn-outline-success {
@@ -463,7 +463,41 @@ body {
 }
 
 .menu_content {
+    color: #494646;
     background-color: #fbfad7;
+
+    .bag_right {
+
+        h4 {
+            color: cadetblue;
+        }
+    }
+
+    .menu_buttons {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .col-sm-4 {
+        max-height: 800px;
+
+        .store_top_content {
+            max-height: 20%;
+
+        }
+
+        .store_bottom_content {
+            // height: 230px;
+            text-align: center;
+
+            .bottom_title {
+                padding-top: 10px;
+                color: cadetblue;
+                
+            }
+        }
+    }
 }
 
 
@@ -509,3 +543,14 @@ body {
 
 
 // ------------ store 商店  end ------------- //
+
+// --------- contact 聯絡我  start ---------- //
+
+.contact_me {
+    margin-top: 99px;
+    height: calc(100vh - 99px);
+    background-color: #e7faeb;
+    background-image: linear-gradient(199deg, #e7faeb 49%, #fff9ef 50%);
+}
+
+// ---------- contact 聯絡我  end ----------- //
