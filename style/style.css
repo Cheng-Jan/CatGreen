@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 body {
   background-color: white;
   margin: 0px;
@@ -109,26 +108,44 @@ body {
   padding: 90px;
 }
 
-html,
-body {
-  position: relative;
-  width: 100%;
-  height: 100%;
+@media (min-width: 1300px) {
+  .illustrations .container {
+    max-width: 1240px;
+  }
 }
 
-body {
-  font-family: 'Roboto Slab', serif;
-  color: #000;
-  margin: 0;
-  padding: 0;
+@media (min-width: 1500px) {
+  .illustrations .container {
+    max-width: 1440px;
+  }
 }
 
-.swiper-container {
+@media (min-width: 1800px) {
+  .illustrations .container {
+    max-width: 1740px;
+  }
+}
+
+.illustrations .swiper-container {
   width: 100%;
   height: 90%;
 }
 
-.swiper-slide {
+.illustrations .swiper-button-next:after,
+.illustrations .swiper-container-rtl .swiper-button-prev:after {
+  color: lightgray;
+}
+
+.illustrations .swiper-button-prev:after,
+.illustrations .swiper-container-rtl .swiper-button-next:after {
+  color: lightgray;
+}
+
+.illustrations .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: gray;
+}
+
+.illustrations .swiper-slide {
   text-align: center;
   background: #fff;
   /* Center slide text vertically */
@@ -143,13 +160,13 @@ body {
           align-items: center;
 }
 
-.container-general {
+.illustrations .container-general {
   padding: 75px 0;
   margin: 0 auto;
-  width: 1000px;
+  width: 86%;
 }
 
-.container-general .gallery-wrap {
+.illustrations .container-general .gallery-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,7 +178,7 @@ body {
   height: 70vh;
 }
 
-.container-general .gallery-wrap .item {
+.illustrations .container-general .gallery-wrap .item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -173,89 +190,89 @@ body {
   transition: all 0.8s ease;
 }
 
-.container-general .gallery-wrap .item:hover {
+.illustrations .container-general .gallery-wrap .item:hover {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
 }
 
-.wrap-effect-1 .item:first-of-type {
+.illustrations .wrap-effect-1 .item:first-of-type {
   background-image: url("../images/1.jpg");
 }
 
-.wrap-effect-1 .item:nth-of-type(2) {
+.illustrations .wrap-effect-1 .item:nth-of-type(2) {
   background-image: url("../images/17.jpg");
 }
 
-.wrap-effect-1 .item:nth-of-type(3) {
+.illustrations .wrap-effect-1 .item:nth-of-type(3) {
   background-image: url("../images/3.jpg");
 }
 
-.wrap-effect-1 .item:nth-of-type(4) {
+.illustrations .wrap-effect-1 .item:nth-of-type(4) {
   background-image: url("../images/4.jpg");
 }
 
-.wrap-effect-1 .item:last-of-type {
+.illustrations .wrap-effect-1 .item:last-of-type {
   background-image: url("../images/5.jpg");
 }
 
-.wrap-effect-2 .item:first-of-type {
+.illustrations .wrap-effect-2 .item:first-of-type {
   background-image: url("../images/1.jpg");
 }
 
-.wrap-effect-2 .item:nth-of-type(2) {
+.illustrations .wrap-effect-2 .item:nth-of-type(2) {
   background-image: url("../images/2.jpg");
 }
 
-.wrap-effect-2 .item:nth-of-type(3) {
+.illustrations .wrap-effect-2 .item:nth-of-type(3) {
   background-image: url("../images/3.jpg");
 }
 
-.wrap-effect-2 .item:nth-of-type(4) {
+.illustrations .wrap-effect-2 .item:nth-of-type(4) {
   background-image: url("../images/4.jpg");
 }
 
-.wrap-effect-2 .item:last-of-type {
+.illustrations .wrap-effect-2 .item:last-of-type {
   background-image: url("../images/5.jpg");
 }
 
-.wrap-effect-3 .item:first-of-type {
+.illustrations .wrap-effect-3 .item:first-of-type {
   background-image: url("../images/1.jpg");
 }
 
-.wrap-effect-3 .item:nth-of-type(2) {
+.illustrations .wrap-effect-3 .item:nth-of-type(2) {
   background-image: url("../images/2.jpg");
 }
 
-.wrap-effect-3 .item:nth-of-type(3) {
+.illustrations .wrap-effect-3 .item:nth-of-type(3) {
   background-image: url("../images/3.jpg");
 }
 
-.wrap-effect-3 .item:nth-of-type(4) {
+.illustrations .wrap-effect-3 .item:nth-of-type(4) {
   background-image: url("../images/4.jpg");
 }
 
-.wrap-effect-3 .item:last-of-type {
+.illustrations .wrap-effect-3 .item:last-of-type {
   background-image: url("../images/5.jpg");
 }
 
-.wrap-effect-4 .item:first-of-type {
+.illustrations .wrap-effect-4 .item:first-of-type {
   background-image: url("../images/1.jpg");
 }
 
-.wrap-effect-4 .item:nth-of-type(2) {
+.illustrations .wrap-effect-4 .item:nth-of-type(2) {
   background-image: url("../images/2.jpg");
 }
 
-.wrap-effect-4 .item:nth-of-type(3) {
+.illustrations .wrap-effect-4 .item:nth-of-type(3) {
   background-image: url("../images/3.jpg");
 }
 
-.wrap-effect-4 .item:nth-of-type(4) {
+.illustrations .wrap-effect-4 .item:nth-of-type(4) {
   background-image: url("../images/4.jpg");
 }
 
-.wrap-effect-4 .item:last-of-type {
+.illustrations .wrap-effect-4 .item:last-of-type {
   background-image: url("../images/5.jpg");
 }
 

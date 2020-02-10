@@ -1,18 +1,25 @@
 // <------- 作品集 Swiper ------->
 
 const swiper1 = new Swiper('.illustration_swiper', {
-    direction: 'vertical',
-    mousewheel: true,
+    // direction: 'vertical',
+    // mousewheel: true,
     // effect: 'cube',
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    // },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     
     keyboard: {
         enabled: true,
         onlyInViewport: false
-    }
+    },
+
+    loop: true,
+
 });
 
 // <------ 商店 > 手提袋 Swiper ------>

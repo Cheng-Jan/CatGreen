@@ -118,223 +118,233 @@ body {
 // ------------- banner  end --------------- //
 
 // ---------- illustration start ------------ //
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
-html,
-body {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+.illustrations {
 
-body {
-    font-family: 'Roboto Slab', serif;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
+    .container {
 
-// .heading {
-//   background: white;
-//   height: 5%;
-//   margin: 10px;
-//   padding: 10px;
-// }
+        @media (min-width: 1300px) {
+            max-width: 1240px;
+        }
 
-.swiper-container {
-    width: 100%;
-    height: 90%;
-}
+        @media (min-width: 1500px) {
+            max-width: 1440px;
+        }
 
-.swiper-slide {
-    text-align: center;
-    background: #fff;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        @media (min-width: 1800px) {
+            max-width: 1740px;
+        }
+    }
 
-// Image Accordions General
-.container-general {
-    padding: 75px 0;
-    margin: 0 auto;
-    width: 1000px;
-
-    .gallery-wrap {
-        display: flex;
-        flex-direction: row;
+    .swiper-container {
         width: 100%;
-        height: 70vh;
+        height: 90%;
+    }
 
-        .item {
-            flex: 1;
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            background-repeat: none;
-            transition: all 0.8s ease;
+    .swiper-button-next:after,
+    .swiper-container-rtl .swiper-button-prev:after {
+        color: lightgray;
+    }
 
-            &:hover {
-                flex: 6;
+    .swiper-button-prev:after,
+    .swiper-container-rtl .swiper-button-next:after {
+        color: lightgray;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+       background-color: gray;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        background: #fff;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // Image Accordions General
+    .container-general {
+        padding: 75px 0;
+        margin: 0 auto;
+        width: 86%;
+
+        .gallery-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70vh;
+
+            .item {
+                flex: 1;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: none;
+                transition: all 0.8s ease;
+
+                &:hover {
+                    flex: 6;
+                }
             }
         }
     }
-}
 
-// Image Accordions Effect 1
-.wrap-effect-1 {
-    .item {
-        &:first-of-type {
-            background-image: url('../images/1.jpg');
-        }
+    // Image Accordions Effect 1
+    .wrap-effect-1 {
+        .item {
+            &:first-of-type {
+                background-image: url('../images/1.jpg');
+            }
 
-        &:nth-of-type(2) {
-            background-image: url('../images/17.jpg');
-        }
+            &:nth-of-type(2) {
+                background-image: url('../images/17.jpg');
+            }
 
-        &:nth-of-type(3) {
-            background-image: url('../images/3.jpg');
-        }
+            &:nth-of-type(3) {
+                background-image: url('../images/3.jpg');
+            }
 
-        &:nth-of-type(4) {
-            background-image: url('../images/4.jpg');
-        }
+            &:nth-of-type(4) {
+                background-image: url('../images/4.jpg');
+            }
 
-        &:last-of-type {
-            background-image: url('../images/5.jpg');
-        }
-    }
-}
-
-// Image Accordions Effect 2
-.wrap-effect-2 {
-    .item {
-        &:first-of-type {
-            background-image: url('../images/1.jpg');
-        }
-
-        &:nth-of-type(2) {
-            background-image: url('../images/2.jpg');
-        }
-
-        &:nth-of-type(3) {
-            background-image: url('../images/3.jpg');
-        }
-
-        &:nth-of-type(4) {
-            background-image: url('../images/4.jpg');
-        }
-
-        &:last-of-type {
-            background-image: url('../images/5.jpg');
+            &:last-of-type {
+                background-image: url('../images/5.jpg');
+            }
         }
     }
-}
 
-// Image Accordions Effect 3
-.wrap-effect-3 {
-    .item {
-        &:first-of-type {
-            background-image: url('../images/1.jpg');
-        }
+    // Image Accordions Effect 2
+    .wrap-effect-2 {
+        .item {
+            &:first-of-type {
+                background-image: url('../images/1.jpg');
+            }
 
-        &:nth-of-type(2) {
-            background-image: url('../images/2.jpg');
-        }
+            &:nth-of-type(2) {
+                background-image: url('../images/2.jpg');
+            }
 
-        &:nth-of-type(3) {
-            background-image: url('../images/3.jpg');
-        }
+            &:nth-of-type(3) {
+                background-image: url('../images/3.jpg');
+            }
 
-        &:nth-of-type(4) {
-            background-image: url('../images/4.jpg');
-        }
+            &:nth-of-type(4) {
+                background-image: url('../images/4.jpg');
+            }
 
-        &:last-of-type {
-            background-image: url('../images/5.jpg');
-        }
-    }
-}
-
-// Image Accordions Effect 4 
-.wrap-effect-4 {
-    .item {
-        &:first-of-type {
-            background-image: url('../images/1.jpg');
-        }
-
-        &:nth-of-type(2) {
-            background-image: url('../images/2.jpg');
-        }
-
-        &:nth-of-type(3) {
-            background-image: url('../images/3.jpg');
-        }
-
-        &:nth-of-type(4) {
-            background-image: url('../images/4.jpg');
-        }
-
-        &:last-of-type {
-            background-image: url('../images/5.jpg');
+            &:last-of-type {
+                background-image: url('../images/5.jpg');
+            }
         }
     }
-}
 
-.inspire {
-    // border: 1px solid rgba(22, 76, 167, 0.6);
-    // border-radius: 10px;
-    // cursor: pointer;
-    // overflow: hidden;
-    // position: relative;
-    // text-decoration: none;
-    // margin: 10px;
-    // padding: 10px;
+    // Image Accordions Effect 3
+    .wrap-effect-3 {
+        .item {
+            &:first-of-type {
+                background-image: url('../images/1.jpg');
+            }
 
-    // &:after {
-    //     background: #38ef7d;
-    //     content: "";
-    //     height: 155px;
-    //     left: -75px;
-    //     opacity: .4;
-    //     position: absolute;
-    //     top: -50px;
-    //     transform: rotate(35deg);
-    //     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    //     width: 50px;
-    //     z-index: -10;
-    // }
+            &:nth-of-type(2) {
+                background-image: url('../images/2.jpg');
+            }
 
-    // &:hover {
-    //     &:after {
-    //         left: 120%;
-    //         transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            &:nth-of-type(3) {
+                background-image: url('../images/3.jpg');
+            }
+
+            &:nth-of-type(4) {
+                background-image: url('../images/4.jpg');
+            }
+
+            &:last-of-type {
+                background-image: url('../images/5.jpg');
+            }
+        }
+    }
+
+    // Image Accordions Effect 4 
+    .wrap-effect-4 {
+        .item {
+            &:first-of-type {
+                background-image: url('../images/1.jpg');
+            }
+
+            &:nth-of-type(2) {
+                background-image: url('../images/2.jpg');
+            }
+
+            &:nth-of-type(3) {
+                background-image: url('../images/3.jpg');
+            }
+
+            &:nth-of-type(4) {
+                background-image: url('../images/4.jpg');
+            }
+
+            &:last-of-type {
+                background-image: url('../images/5.jpg');
+            }
+        }
+    }
+
+    .inspire {
+        // border: 1px solid rgba(22, 76, 167, 0.6);
+        // border-radius: 10px;
+        // cursor: pointer;
+        // overflow: hidden;
+        // position: relative;
+        // text-decoration: none;
+        // margin: 10px;
+        // padding: 10px;
+
+        // &:after {
+        //     background: #38ef7d;
+        //     content: "";
+        //     height: 155px;
+        //     left: -75px;
+        //     opacity: .4;
+        //     position: absolute;
+        //     top: -50px;
+        //     transform: rotate(35deg);
+        //     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        //     width: 50px;
+        //     z-index: -10;
+        // }
+
+        // &:hover {
+        //     &:after {
+        //         left: 120%;
+        //         transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        //     }
+        // }
+    }
+
+    // @keyframes rotate {
+    //     0% {
+    //         transform: rotate(0deg) translate3d(0, 0, 0);
+    //     }
+
+    //     25% {
+    //         transform: rotate(10deg) translate3d(0, 0, 0);
+    //     }
+
+    //     50% {
+    //         transform: rotate(-10deg) translate3d(0, 0, 0);
+    //     }
+
+    //     75% {
+    //         transform: rotate(5deg) translate3d(0, 0, 0);
+    //     }
+
+    //     100% {
+    //         transform: rotate(0deg) translate3d(0, 0, 0)
     //     }
     // }
 }
-
-// @keyframes rotate {
-//     0% {
-//         transform: rotate(0deg) translate3d(0, 0, 0);
-//     }
-
-//     25% {
-//         transform: rotate(10deg) translate3d(0, 0, 0);
-//     }
-
-//     50% {
-//         transform: rotate(-10deg) translate3d(0, 0, 0);
-//     }
-
-//     75% {
-//         transform: rotate(5deg) translate3d(0, 0, 0);
-//     }
-
-//     100% {
-//         transform: rotate(0deg) translate3d(0, 0, 0)
-//     }
-// }
 
 // ---------- illustration  end ------------ //
 
@@ -468,7 +478,7 @@ body {
     background-color: #fbfad7;
 
     .bag_right {
-        
+
 
         h4 {
             color: cadetblue;
@@ -612,7 +622,7 @@ body {
                 .contact_item {
                     // background-color: whitesmoke;
                 }
-                
+
                 .ci1 {
                     color: #e6e3a5;
                     font-size: 1.6em;
@@ -620,12 +630,12 @@ body {
                     font-weight: bold;
                     border-bottom: 5px solid white;
                     padding-bottom: 12px;
-                    
+
                 }
 
                 .ci2 {
                     margin: 20px;
-                    
+
                     a {
                         color: cadetblue;
 
@@ -639,7 +649,7 @@ body {
                 .btn {
                     display: flex;
                     flex-direction: row;
-                    
+
                     i {
                         padding: 0px 10px 0 10px;
                         color: cadetblue;
@@ -679,8 +689,8 @@ body {
             color: white;
             font-size: 1rem;
             letter-spacing: 4px;
-            
-            
+
+
         }
     }
 }
