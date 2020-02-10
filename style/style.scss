@@ -93,8 +93,8 @@ body {
     // }
 
     .col-sm-8 img {
-        width: 92%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
     }
 
     .banner_text {
@@ -120,6 +120,19 @@ body {
 // ---------- illustration start ------------ //
 
 .illustrations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .illus_title {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        width: 100px;
+        height: 500px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
     .container {
 
@@ -199,7 +212,7 @@ body {
             }
 
             &:nth-of-type(2) {
-                background-image: url('../images/17.jpg');
+                background-image: url('../images/2.jpg');
             }
 
             &:nth-of-type(3) {
@@ -220,23 +233,23 @@ body {
     .wrap-effect-2 {
         .item {
             &:first-of-type {
-                background-image: url('../images/1.jpg');
+                background-image: url('../images/6.jpg');
             }
 
             &:nth-of-type(2) {
-                background-image: url('../images/2.jpg');
+                background-image: url('../images/7.jpg');
             }
 
             &:nth-of-type(3) {
-                background-image: url('../images/3.jpg');
+                background-image: url('../images/8.jpg');
             }
 
             &:nth-of-type(4) {
-                background-image: url('../images/4.jpg');
+                background-image: url('../images/9.jpg');
             }
 
             &:last-of-type {
-                background-image: url('../images/5.jpg');
+                background-image: url('../images/10.jpg');
             }
         }
     }
@@ -245,23 +258,23 @@ body {
     .wrap-effect-3 {
         .item {
             &:first-of-type {
-                background-image: url('../images/1.jpg');
+                background-image: url('../images/11.jpg');
             }
 
             &:nth-of-type(2) {
-                background-image: url('../images/2.jpg');
+                background-image: url('../images/12.jpg');
             }
 
             &:nth-of-type(3) {
-                background-image: url('../images/3.jpg');
+                background-image: url('../images/13.jpg');
             }
 
             &:nth-of-type(4) {
-                background-image: url('../images/4.jpg');
+                background-image: url('../images/14.jpg');
             }
 
             &:last-of-type {
-                background-image: url('../images/5.jpg');
+                background-image: url('../images/15.jpg');
             }
         }
     }
@@ -270,23 +283,48 @@ body {
     .wrap-effect-4 {
         .item {
             &:first-of-type {
-                background-image: url('../images/1.jpg');
+                background-image: url('../images/16.jpg');
             }
 
             &:nth-of-type(2) {
-                background-image: url('../images/2.jpg');
+                background-image: url('../images/17.jpg');
             }
 
             &:nth-of-type(3) {
-                background-image: url('../images/3.jpg');
+                background-image: url('../images/18.jpg');
             }
 
             &:nth-of-type(4) {
-                background-image: url('../images/4.jpg');
+                background-image: url('../images/19.jpg');
             }
 
             &:last-of-type {
-                background-image: url('../images/5.jpg');
+                background-image: url('../images/20.jpg');
+            }
+        }
+    }
+
+    // Image Accordions Effect 5 
+    .wrap-effect-5 {
+        .item {
+            &:first-of-type {
+                background-image: url('../images/21.jpg');
+            }
+
+            &:nth-of-type(2) {
+                background-image: url('../images/22.jpg');
+            }
+
+            &:nth-of-type(3) {
+                background-image: url('../images/23.jpg');
+            }
+
+            &:nth-of-type(4) {
+                background-image: url('../images/24.jpg');
+            }
+
+            &:last-of-type {
+                background-image: url('../images/25.jpg');
             }
         }
     }
@@ -587,7 +625,7 @@ body {
                 // width: 100%;
                 // height: 100%;
                 padding-bottom: 100%;
-                background-image: url('../images/25.jpg');
+                background-image: url('../images/contactme.jpg');
                 // background-size: cover;
                 background-size: 100%;
                 background-position: center center;
@@ -673,7 +711,7 @@ body {
     font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
     width: 100%;
     height: 140px;
-    background-image: url(../images/footer4.png);
+    background-image: url(../images/footer.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
