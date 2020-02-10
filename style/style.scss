@@ -468,6 +468,7 @@ body {
     background-color: #fbfad7;
 
     .bag_right {
+        
 
         h4 {
             color: cadetblue;
@@ -549,6 +550,7 @@ body {
 // --------- contact 聯絡我  start ---------- //
 
 .contact_me {
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
     margin-top: 99px;
     height: calc(100vh - 99px);
     background-color: #e7faeb;
@@ -562,26 +564,45 @@ body {
     // }
 
     .container {
-        background-color: #fff;
+        // background-color: #fff;
         width: 50%;
         height: 70%;
 
         .row {
             width: 100%;
             height: 100%;
+            margin-left: 0px;
 
-            .col-7 {
-                width: 100%;
-                height: 100%;
-                background-image: url('../images/15.jpg');
-                background-size: cover;
-                background-position: center;
+            .col-sm-7 {
+                // width: 100%;
+                // height: 100%;
+                padding-bottom: 100%;
+                background-image: url('../images/25.jpg');
+                // background-size: cover;
+                background-size: 100%;
+                background-position: center center;
                 background-repeat: no-repeat;
+                // min-width: 200px;
             }
 
-            .col-5 {
+            @media screen and (min-width: 992px) {
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .col-sm-7 {
+                    flex-basis: 60%;
+                    padding-bottom: 30%;
+                }
+            }
+
+            .col-sm-5 {
+                background-color: white;
                 width: 100%;
                 height: 100%;
+                text-align: center;
+                line-height: 120px;
             }
 
         }
@@ -589,3 +610,46 @@ body {
 }
 
 // ---------- contact 聯絡我  end ----------- //
+
+// ---------- footer 頁尾 start ----------- //
+
+// .footer {
+//     width: 100%;
+//     height: 140px;
+//     background-color: #fff9ef;
+
+//     .container {
+//         width: 100%;
+//         height: 100%;
+//         background-image: url(../images/footer3.png);
+//         background-size: contain;
+//         background-position: center center;
+//         background-repeat: no-repeat;
+//     }
+
+// }
+
+.footer {
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+    width: 100%;
+    height: 140px;
+    background-image: url(../images/footer4.png);
+    background-position: center center;
+    background-size: cover;
+
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        .copyright {
+            color: white;
+            font-size: 1rem;
+            letter-spacing: 4px;
+        }
+    }
+}
+
+// ---------- footer 頁尾  end  ----------- //
