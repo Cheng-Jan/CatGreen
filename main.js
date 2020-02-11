@@ -1,3 +1,35 @@
+// <------- loading_page ------->
+
+ var time = 0;
+
+ function countDown() {
+   time++;
+   $(".loading").css(
+     "clip-path",
+     "polygon(0 100%, 100% 100%, 100% " + (100 - time) + "%, 0 " + (100 - time) + "%"
+   );
+
+   if (time === 60) {
+     $(".loading_rose2").css('opacity', "1");
+   }
+
+   // $("h2").text(time + "%")
+   if (time === 100) {
+     clearInterval(timer);
+     $(".loading_bg").addClass("done");
+     $("body").css('overflow', 'auto');
+     console.log($("body"));
+     
+
+     setTimeout(function () {
+       $(".loading_bg").css("display", "none");
+     }, 1000);
+   }
+ }
+
+ var timer = setInterval(countDown, 50);
+
+
 // <------- navbar 隱藏+滑出 ------->
 
 $(window).on("load", function () {
