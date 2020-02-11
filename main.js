@@ -1,3 +1,22 @@
+// <------- banner parallax ------->
+
+//   var scene = document.getElementById("scene");
+      //   var parallaxInstance = new Parallax(scene);
+
+      var scene = document.getElementById("scene");
+      var parallaxInstance = new Parallax(scene, {
+        calibrateX: false,
+        calibrateY: true,
+        invertX: false,
+        invertY: true,
+        limitX: false,
+        limitY: 10,
+        scalarX: 2,
+        scalarY: 8,
+        frictionX: 0.2,
+        frictionY: 0.8
+      });
+
 // <------- 作品集 Swiper ------->
 
 const swiper1 = new Swiper('.illustration_swiper', {

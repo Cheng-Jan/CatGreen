@@ -21,7 +21,7 @@
     <!------- header navbar導覽列  start -------->
     <!------------------------------------------>
 
-    <header class="header fixed-top">
+    <header class="header fixed-top d-none">
         <div class="container container_navbar">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                 <a class="navbar-brand" href="#">
@@ -96,7 +96,53 @@
     <!------------------------------------------>
     <!------------ banner 首頁 start ------------>
     <!------------------------------------------>
-    <div class="banner">
+    
+    <div
+      data-calibrate-x="false"
+      data-calibrate-y="true"
+      data-invert-x="false"
+      data-invert-y="true"
+      data-limit-x="false"
+      data-limit-y="10"
+      data-scalar-x="2"
+      data-scalar-y="8"
+      data-friction-x="0.2"
+      data-friction-y="0.8"
+      id="scene"
+    >
+      <div data-depth="0">
+        <img
+          src="images/banner/banner-bg.png"
+          alt=""
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div data-depth="0.1">
+        <img src="images/banner/Tree-2.png" alt="" width="100%" height="100%" />
+      </div>
+      <div data-depth="0.2">
+        <img src="images/banner/Tree-1.png" alt="" width="100%" height="100%" />
+      </div>
+      <div data-depth="0.4">
+        <img src="images/banner/Leaves-2.png" alt="" width="100%" height="100%" />
+      </div>
+      <div data-depth="0.6">
+        <img src="images/banner/Leaves-1.png" alt="" width="100%" height="100%" />
+      </div>
+      <div data-depth="0.8">
+        <img src="images/banner/FatCat.png" alt="" width="100%" height="100%" />
+      </div>
+      <div data-depth="1"">
+        <img src="images/banner/Nut.png" alt="" width="100%" height="100%" />
+      </div>
+      <div data-depth="1"">
+        <img src="images/banner/Vera.png" alt="" width="100%" height="100%" />
+      </div>
+    </div>
+    
+    <!-- //    舊版的banner    // -->
+    <div class="banner d-none">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
@@ -554,6 +600,7 @@
     <script src="jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="main.js"></script>
 </body>
 
