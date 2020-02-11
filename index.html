@@ -96,27 +96,60 @@
     <!------------------------------------------>
     <!------------ banner 首頁 start ------------>
     <!------------------------------------------>
-    <div class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <img src="images/index.jpg" alt="貓綠色首圖">
-                </div>
-                <div class="col-sm-4">
-                    <div class="banner_text">
-                        <div>這世界流動的太快</div>
-                        <br>
-                        <div>只有美好的事物能讓人感到溫暖平靜</div>
-                        <br>
-                        <div>肥貓的發懶日常，療癒每一刻時光</div>
-                        <br>
-                        <div>讓我們一起</div>
-                        <br>
-                        <div>好好生活 / 純粹美好</div>
-                    </div>
-                </div>
+
+    <div class="parent">
+        <!-- // 第一層 // -->
+        <div data-calibrate-x="false" data-calibrate-y="true" data-invert-x="false" data-invert-y="true"
+            data-limit-x="false" data-limit-y="10" data-scalar-x="2" data-scalar-y="8" data-friction-x="0.2"
+            data-friction-y="0.8" id="scene">
+            <div data-depth="0">
+                <img src="images/banner/banner-bg.png" alt="" width="100%" />
             </div>
+            <div data-depth="0.1">
+                <img src="images/banner/Tree-2.png" alt="" width="100%" />
+            </div>
+            <div data-depth="0.2">
+                <img src="images/banner/Tree-1.png" alt="" width="100%" />
+            </div>
+
+            <div data-depth="0.6">
+                <img src="images/banner/Leaves-1.png" alt="" width="100%" />
+            </div>
+            <div data-depth="0.8">
+                <img src="images/banner/FatCat.png" alt="" width="100%" />
+            </div>
+
         </div>
+        <!-- // 第二層 // -->
+        <div data-calibrate-x="true" data-calibrate-y="false" data-invert-x="true" data-invert-y="false"
+            data-limit-x="6" data-limit-y="false" data-scalar-x="3" data-scalar-y="3" data-friction-x="0.3"
+            data-friction-y="0.3" id="scene2">
+            <div data-depth="0.4">
+                <img src="images/banner/Leaves-2.png" alt="" width="100%" />
+            </div>
+
+            <div data-depth="1">
+                <img src="images/banner/Nut.png" alt="" width="100%" />
+            </div>
+
+            <div data-depth="1">
+                <img src="images/banner/Vera.png" alt="" width="100%" />
+            </div>
+
+        </div>
+
+        <div class="banner_text">
+            <div>&emsp;這世界流動的太快</div>
+            <br>
+            <div>只有美好的事物能讓人感到溫暖平靜</div>
+            <br>
+            <div>肥貓的發懶日常，療癒每一刻時光</div>
+            <br>
+            <div>&emsp;&emsp;讓我們一起</div>
+            <br>
+            <div>&emsp;好好生活 / 純粹美好</div>
+        </div>
+
     </div>
 
     <!------------------------------------------>
@@ -554,6 +587,7 @@
     <script src="jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="main.js"></script>
 </body>
 
