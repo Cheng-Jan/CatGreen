@@ -51,6 +51,7 @@ body {
   height: auto;
   color: gray;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .header .link_a .first_letter {
@@ -65,7 +66,7 @@ body {
   width: 0;
   height: 0;
   color: transparent;
-  cursor: default;
+  pointer-events: none;
   -webkit-transition: 0.7s;
   transition: 0.7s;
   -webkit-writing-mode: vertical-lr;
@@ -125,14 +126,22 @@ body {
 }
 
 .illustrations .illus_title {
+  margin: 20px;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
   width: 100px;
-  height: 500px;
-  font-size: 1.5rem;
+  height: 400px;
+  color: gray;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
   text-align: center;
+}
+
+.illustrations .container {
+  width: 90%;
 }
 
 @media (min-width: 1300px) {
@@ -351,6 +360,17 @@ body {
 
 .store_font {
   font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
+.store_title {
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  color: gray;
+  font-size: 1.1rem;
+  letter-spacing: 7px;
+  font-weight: bold;
+  text-align: center;
 }
 
 :root {

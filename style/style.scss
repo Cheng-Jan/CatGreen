@@ -52,6 +52,7 @@ body {
             height: auto;
             color: gray;
             cursor: pointer;
+            pointer-events: auto;
         }
 
         .first_letter {
@@ -64,7 +65,8 @@ body {
             width: 0;
             height: 0;
             color: transparent;
-            cursor: default;
+            // cursor: default;
+            pointer-events: none;
             transition: 0.7s;
             writing-mode: vertical-lr;
             text-orientation: upright;
@@ -126,15 +128,21 @@ body {
     align-items: center;
 
     .illus_title {
+        margin: 20px;
         writing-mode: vertical-rl;
         text-orientation: upright;
         width: 100px;
-        height: 500px;
-        font-size: 1.5rem;
+        height: 400px;
+        color: gray;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        font-weight: bold;
         text-align: center;
+
     }
 
     .container {
+        width: 90%;
 
         @media (min-width: 1300px) {
             max-width: 1240px;
@@ -165,7 +173,7 @@ body {
     }
 
     .swiper-pagination .swiper-pagination-bullet-active {
-       background-color: gray;
+        background-color: gray;
     }
 
     .swiper-slide {
@@ -423,16 +431,22 @@ body {
 
 
 .store_font {
+    // height: calc(100vh - 100px);
     font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 
 }
 
-// .store_title {
-//     color: cadetblue;
-//     font-size: 1.4rem;
-//     font-weight: bold;
-//     text-align: center;
-// }
+.store_title {
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    // height: 400px;
+    color: gray;
+    font-size: 1.1rem;
+    letter-spacing: 7px;
+    font-weight: bold;
+    text-align: center;
+}
 
 // arrow 顏色 //
 :root {
