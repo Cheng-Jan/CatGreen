@@ -108,7 +108,7 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
-  font-family: Noto Sans TC, 微軟正黑體;
+  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
   font-size: 1.2rem;
   letter-spacing: 6px;
 }
@@ -337,29 +337,72 @@ body {
 }
 
 .aboutMe {
-  background-color: #E7FAEB;
+  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
   margin-top: 100px;
   height: calc(100vh - 100px);
-  overflow: hidden;
   /* viewport height 可視區域 扣掉 navbar高度 */
+  overflow: hidden;
+  position: relative;
 }
 
-.aboutMe .about_left {
+.aboutMe .clippy {
+  background-color: #e7faeb;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(29% 0, 100% 24%, 70% 98%, 0 65%);
+          clip-path: polygon(29% 0, 100% 24%, 70% 98%, 0 65%);
+}
+
+.aboutMe .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .container .row .about_left {
   background-color: #fbfad7;
   color: black;
-  font-family: 微軟正黑體;
-  font-size: 21px;
-  font-weight: bold;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
   text-align: center;
 }
 
-.aboutMe .about_right {
-  background-color: lightslategray;
+.aboutMe .container .row .about_middle {
+  width: 60%;
+  height: 60%;
+  background-color: #fbfad7;
   color: black;
-  font-family: 微軟正黑體;
-  font-size: 21px;
-  font-weight: bold;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
   text-align: center;
+}
+
+.aboutMe .container .row .about_middle .about_name {
+  letter-spacing: 4px;
+}
+
+.aboutMe .container .row .about_right {
+  width: 90%;
+  height: 90%;
 }
 
 .store_font {
@@ -596,6 +639,7 @@ body {
 
 .contact_me .container .row .col-sm-5 .ci2 {
   margin: 20px;
+  letter-spacing: 1px;
 }
 
 .contact_me .container .row .col-sm-5 .ci2 a {
