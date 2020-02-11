@@ -88,6 +88,7 @@ body {
 
     #scene,
     #scene2 {
+        width: 100%;
         height: 100vh;
         position: absolute;
 
@@ -407,7 +408,7 @@ body {
         position: absolute;
         width: 100%;
         height: 100%;
-        clip-path: polygon(29% 0, 100% 24%, 70% 98%, 0 65%);
+        clip-path: polygon(29% 0, 98% 24%, 70% 98%, 0 65%);
     }
 
     .container {
