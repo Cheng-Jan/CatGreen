@@ -40,7 +40,7 @@ $(window).on("load", function () {
 
   function mainNav() {
     var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    if (top > 200) $('.header').stop().animate({
+    if (top > 100) $('.header').stop().animate({
       "opacity": '1',
       "top": '0'
     });

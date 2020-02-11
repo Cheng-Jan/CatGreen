@@ -179,7 +179,7 @@ body {
         height: 400px;
         line-height: 100px;
         color: gray;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         letter-spacing: 2px;
         font-weight: bold;
         text-align: center;
@@ -383,59 +383,6 @@ body {
         }
     }
 
-    .inspire {
-        // border: 1px solid rgba(22, 76, 167, 0.6);
-        // border-radius: 10px;
-        // cursor: pointer;
-        // overflow: hidden;
-        // position: relative;
-        // text-decoration: none;
-        // margin: 10px;
-        // padding: 10px;
-
-        // &:after {
-        //     background: #38ef7d;
-        //     content: "";
-        //     height: 155px;
-        //     left: -75px;
-        //     opacity: .4;
-        //     position: absolute;
-        //     top: -50px;
-        //     transform: rotate(35deg);
-        //     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-        //     width: 50px;
-        //     z-index: -10;
-        // }
-
-        // &:hover {
-        //     &:after {
-        //         left: 120%;
-        //         transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-        //     }
-        // }
-    }
-
-    // @keyframes rotate {
-    //     0% {
-    //         transform: rotate(0deg) translate3d(0, 0, 0);
-    //     }
-
-    //     25% {
-    //         transform: rotate(10deg) translate3d(0, 0, 0);
-    //     }
-
-    //     50% {
-    //         transform: rotate(-10deg) translate3d(0, 0, 0);
-    //     }
-
-    //     75% {
-    //         transform: rotate(5deg) translate3d(0, 0, 0);
-    //     }
-
-    //     100% {
-    //         transform: rotate(0deg) translate3d(0, 0, 0)
-    //     }
-    // }
 }
 
 // ---------- illustration  end ------------ //
@@ -462,28 +409,30 @@ body {
     .container {
 
         .row {
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            
-            .col-sm-4, .col-sm-2, .col-sm-6 {
-                
 
-            }
+            .col-sm-3,
+            .col-sm-2,
+            .col-sm-6,
+            .col-sm-1 {}
 
-            .about_left {
+            .about1 {
                 background-color: #fbfad7;
                 color: black;
                 writing-mode: vertical-rl;
                 text-orientation: upright;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 letter-spacing: 3px;
                 // font-weight: bold;
                 text-align: center;
             }
-            
-            .about_middle {
+
+            .about2 {
                 width: 60%;
                 height: 60%;
                 background-color: #fbfad7;
@@ -494,21 +443,34 @@ body {
                 letter-spacing: 3px;
                 // font-weight: bold;
                 text-align: center;
-                
+
                 .about_name {
                     letter-spacing: 4px;
                 }
             }
-            
-            .about_right {
+
+            .about3 {
                 // background-color: lightslategray;
                 width: 90%;
                 height: 90%;
                 // padding: 90px;
             }
+
+            .about4 {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                width: 100px;
+                height: 400px;
+                line-height: 100px;
+                color: gray;
+                font-size: 1.6rem;
+                letter-spacing: 2px;
+                font-weight: bold;
+                text-align: center;
+            }
         }
-        
-        
+
+
     }
 }
 
@@ -530,7 +492,7 @@ body {
     width: 100%;
     // height: 400px;
     color: gray;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     letter-spacing: 7px;
     font-weight: bold;
     text-align: center;
@@ -776,6 +738,7 @@ body {
                 .ci2 {
                     margin: 20px;
                     letter-spacing: 1px;
+
                     a {
                         color: cadetblue;
 
