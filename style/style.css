@@ -76,6 +76,14 @@ body {
   top: 32px;
 }
 
+.parent {
+  position: relative;
+}
+
+.parent #scene, .parent #scene2 {
+  position: absolute;
+}
+
 .banner {
   background-color: #E7FAEB;
   margin-top: 100px;

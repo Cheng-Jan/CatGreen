@@ -79,6 +79,13 @@ body {
 
 
 // ------------- banner start --------------- //
+.parent {
+        position: relative;
+
+      #scene, #scene2 {
+        position: absolute;
+      }
+}
 
 .banner {
     background-color: #E7FAEB;
@@ -89,6 +96,8 @@ body {
     @media (max-width: 576px) {
         height: auto
     }
+
+    
 
     // .banner_left{
     //     height: 100%;

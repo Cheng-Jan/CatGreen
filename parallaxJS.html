@@ -9,6 +9,15 @@
       body {
         margin: 0;
       }
+
+      .parent {
+        position: relative;
+      }
+
+      #scene, #scene2 {
+        position: absolute;
+      }
+
     </style>
   </head>
   <body>
@@ -17,6 +26,8 @@
       <div data-depth="0.6">My second Layer!</div>
     </div> -->
 
+    <!-- // 第一層 // -->
+    <div class="parent">
     <div
       data-calibrate-x="false"
       data-calibrate-y="true"
@@ -44,21 +55,44 @@
       <div data-depth="0.2">
         <img src="images/banner/Tree-1.png" alt="" width="100%" height="100%" />
       </div>
-      <div data-depth="0.4">
-        <img src="images/banner/Leaves-2.png" alt="" width="100%" height="100%" />
-      </div>
+      
+
       <div data-depth="0.6">
         <img src="images/banner/Leaves-1.png" alt="" width="100%" height="100%" />
       </div>
       <div data-depth="0.8">
         <img src="images/banner/FatCat.png" alt="" width="100%" height="100%" />
       </div>
-      <div data-depth="1"">
+      
+
+    </div>
+    </div>
+    <!-- // 第二層 // -->
+    <div
+    data-calibrate-x="true"
+    data-calibrate-y="false"
+    data-invert-x="true"
+    data-invert-y="false"
+    data-limit-x="6"
+    data-limit-y="false"
+    data-scalar-x="3"
+    data-scalar-y="3"
+    data-friction-x="0.3"
+    data-friction-y="0.3"
+    id="scene2"
+    >
+      <div data-depth="0.4">
+      <img src="images/banner/Leaves-2.png" alt="" width="100%" height="100%" />
+      </div>
+
+      <div data-depth="1">
         <img src="images/banner/Nut.png" alt="" width="100%" height="100%" />
       </div>
-      <div data-depth="1"">
+
+      <div data-depth="1">
         <img src="images/banner/Vera.png" alt="" width="100%" height="100%" />
       </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
@@ -78,8 +112,23 @@
         scalarX: 2,
         scalarY: 8,
         frictionX: 0.2,
-        frictionY: 0.8
+        frictionY: 0.8,
       });
+
+      var scene2 = document.getElementById("scene2");
+      var parallaxInstance2 = new Parallax(scene2, {
+        calibrateX: true,
+        calibrateY: false,
+        invertX: true,
+        invertY: false,
+        limitX: 6,
+        limitY: false,
+        scalarX: 3,
+        scalarY: 3,
+        frictionX: 0.3,
+        frictionY: 0.3,
+      });
+
     </script>
   </body>
 </html>

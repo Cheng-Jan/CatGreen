@@ -1,122 +1,136 @@
 // <------- banner parallax ------->
 
 //   var scene = document.getElementById("scene");
-      //   var parallaxInstance = new Parallax(scene);
+//   var parallaxInstance = new Parallax(scene);
 
-      var scene = document.getElementById("scene");
-      var parallaxInstance = new Parallax(scene, {
-        calibrateX: false,
-        calibrateY: true,
-        invertX: false,
-        invertY: true,
-        limitX: false,
-        limitY: 10,
-        scalarX: 2,
-        scalarY: 8,
-        frictionX: 0.2,
-        frictionY: 0.8
-      });
+var scene = document.getElementById("scene");
+var parallaxInstance = new Parallax(scene, {
+  calibrateX: false,
+  calibrateY: true,
+  invertX: false,
+  invertY: true,
+  limitX: false,
+  limitY: 10,
+  scalarX: 2,
+  scalarY: 8,
+  frictionX: 0.2,
+  frictionY: 0.8,
+});
+
+var scene2 = document.getElementById("scene2");
+var parallaxInstance2 = new Parallax(scene2, {
+  calibrateX: true,
+  calibrateY: false,
+  invertX: true,
+  invertY: false,
+  limitX: 6,
+  limitY: false,
+  scalarX: 3,
+  scalarY: 3,
+  frictionX: 0.3,
+  frictionY: 0.3,
+});
 
 // <------- 作品集 Swiper ------->
 
 const swiper1 = new Swiper('.illustration_swiper', {
-    // direction: 'vertical',
-    // mousewheel: true,
-    // effect: 'cube',
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false
-    },
+  // direction: 'vertical',
+  // mousewheel: true,
+  // effect: 'cube',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-    loop: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false
+  },
+
+  loop: true,
 
 });
 
 // <------ 商店 > 手提袋 Swiper ------>
 
 var swiper2 = new Swiper('.tabs_swiper', {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
-  // <------ 商店 > 手提袋 button 連結網址 ------>
+// <------ 商店 > 手提袋 button 連結網址 ------>
 
-  function bag_click() {
-    window.open("https://www.pinkoi.com/product/Sx7dcuxY");
-  }
+function bag_click() {
+  window.open("https://www.pinkoi.com/product/Sx7dcuxY");
+}
 
-  function bag_click_more() {
-    window.open("https://www.pinkoi.com/store/yourscat?category=1");
-  }
+function bag_click_more() {
+  window.open("https://www.pinkoi.com/store/yourscat?category=1");
+}
 
-  // <------ 商店 > 配件飾品 button 連結網址 ------>
+// <------ 商店 > 配件飾品 button 連結網址 ------>
 
-  function menu2_click1() {
-    window.open("https://www.pinkoi.com/product/fH27kww6");
-  }
+function menu2_click1() {
+  window.open("https://www.pinkoi.com/product/fH27kww6");
+}
 
-  function menu2_click2() {
-    window.open("https://www.pinkoi.com/product/MCH32DFR");
-  }
+function menu2_click2() {
+  window.open("https://www.pinkoi.com/product/MCH32DFR");
+}
 
-  function menu2_click3() {
-    window.open("https://www.pinkoi.com/product/eNfDRbLr");
-  }
+function menu2_click3() {
+  window.open("https://www.pinkoi.com/product/eNfDRbLr");
+}
 
-  function menu2_click_more() {
-    window.open("https://www.pinkoi.com/store/yourscat?category=2");
-  }
-  
-  // <------ 商店 > 文具卡片 button 連結網址 ------>
+function menu2_click_more() {
+  window.open("https://www.pinkoi.com/store/yourscat?category=2");
+}
 
-  function menu3_click1() {
-    window.open("https://www.pinkoi.com/product/dqcSTVrt");
-  }
+// <------ 商店 > 文具卡片 button 連結網址 ------>
 
-  function menu3_click2() {
-    window.open("https://www.pinkoi.com/product/RSBhKAXU");
-  }
+function menu3_click1() {
+  window.open("https://www.pinkoi.com/product/dqcSTVrt");
+}
 
-  function menu3_click3() {
-    window.open("https://www.pinkoi.com/product/z9HSD3kV");
-  }
+function menu3_click2() {
+  window.open("https://www.pinkoi.com/product/RSBhKAXU");
+}
 
-  function menu3_click_more() {
-    window.open("https://www.pinkoi.com/store/yourscat?category=3");
-  }
+function menu3_click3() {
+  window.open("https://www.pinkoi.com/product/z9HSD3kV");
+}
 
-  // <------ 商店 > 美妝工具 button 連結網址 ------>
+function menu3_click_more() {
+  window.open("https://www.pinkoi.com/store/yourscat?category=3");
+}
 
-  function menu4_click1() {
-    window.open("https://www.pinkoi.com/product/dHPaL7Av");
-  }
+// <------ 商店 > 美妝工具 button 連結網址 ------>
 
-  function menu4_click2() {
-    window.open("https://www.pinkoi.com/product/svWDZfbD");
-  }
+function menu4_click1() {
+  window.open("https://www.pinkoi.com/product/dHPaL7Av");
+}
 
-  function menu4_click3() {
-    window.open("https://hk.pinkoi.com/product/qBRnWcCq");
-  }
-  
-  function menu4_click_more() {
-    window.open("https://www.pinkoi.com/store/yourscat?category=14");
-  }
+function menu4_click2() {
+  window.open("https://www.pinkoi.com/product/svWDZfbD");
+}
+
+function menu4_click3() {
+  window.open("https://hk.pinkoi.com/product/qBRnWcCq");
+}
+
+function menu4_click_more() {
+  window.open("https://www.pinkoi.com/store/yourscat?category=14");
+}
