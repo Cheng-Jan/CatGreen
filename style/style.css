@@ -462,6 +462,13 @@ body {
   height: 90%;
 }
 
+.aboutMe .container .row .about3 .shake {
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .aboutMe .container .row .about4 .about_title {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;

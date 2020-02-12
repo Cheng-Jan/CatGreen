@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="js/bootstrap-4.2.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="style/style.css">
     <!-- <link rel="stylesheet" href="style/notosanstc.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;display=swap" rel="stylesheet" />
@@ -146,7 +147,7 @@
         </div>
 
         <div class="banner_text">
-            <div>&emsp;這世界流動的太快</div>
+            <div class="b1">&emsp;這世界流動的太快</div>
             <br>
             <div>只有美好的事物能讓人感到溫暖平靜</div>
             <br>
@@ -168,7 +169,7 @@
     <!------------------------------------------>
 
     <div class="illustrations">
-        <div class="illus_title">ILLUSTRATION</div>
+        <div class="illus_title wow fadeInLeft slower" data-wow-duration:="3s">ILLUSTRATION</div>
         <div class="container">
             <div class="swiper-container illustration_swiper">
                 <div class="swiper-wrapper">
@@ -246,7 +247,7 @@
         <div class="clippy"></div>
         <div class="container">
             <div class="row">
-                <div class="about1 col-sm-4">
+                <div class="about1 col-sm-4 wow fadeInUp slower">
                     <div>自由插畫工作者</div>
                  
                     <div>／ ILLUSTRATION</div>
@@ -262,10 +263,10 @@
                     <div class="about_name">Vera Wu</div>
                 </div>
                 <div class="about3 col-sm-6">
-                    <img class="rounded-circle" src="images/head.jpg" alt="Vera Wu" width="100%" height="100%">
+                    <img class="rounded-circle animated shake slower" src="images/head.jpg" alt="Vera Wu" width="100%" height="100%">
                 </div>
                 <div class="about4 col-sm-1">
-                    <div class="about_title">ABOUT</div>
+                    <div class="about_title wow fadeInRight slower" data-wow-duration:="3s">ABOUT</div>
                 </div>
             </div>
         </div>
@@ -283,10 +284,10 @@
     <div class="container store_font">
         <br>
         <br>
-        <div class="store_title">STORE</div>
+        <div class="store_title wow slideInDown" data-wow-duration:="4s">STORE</div>
         <br>
         <!-- Nav pills -->
-        <ul class="nav nav-pills" role="tablist">
+        <ul class="nav nav-pills  wow slideInLeft slow" data-wow-duration:="2s" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" data-toggle="pill" href="#menu1">包包提袋</a>
             </li>
@@ -302,7 +303,7 @@
         </ul>
 
         <!-- Tab panes -->
-        <div class="tab-content">
+        <div class="tab-content wow slideInRight slow" data-wow-delay:="1s">
             <div id="menu1" class="container tab-pane active"><br>
                 <div class="menu_content">
                     <div class="container">
@@ -553,10 +554,10 @@
 
     <div class="contact_me">
         <div class="container">
-            <div class="row">
+            <div class="row wow fadeInUp" data-wow-duration="2s">
                 <div class="col-sm-7"></div>
                 <div class="contact_content col-sm-5">
-                    <div class="contact_item ci1">CONTACT</div>
+                    <div class="contact_item ci1 wow slideInDown slower">CONTACT</div>
                     <div class="contact_item ci2"><a href="mailto:info@pig78102@hotmail.com"
                             class="about_email">pig78102@hotmail.com</a></div>
                     <div class="contact_item btn">
@@ -601,6 +602,10 @@
     <script src="js/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        </script>
     <script src="main.js"></script>
 </body>
 
