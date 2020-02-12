@@ -2,36 +2,36 @@
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
- 
-var time = 0;
 
- function countDown() {
-   time++;
-   $(".loading").css(
-     "clip-path",
-     "polygon(0 100%, 100% 100%, 100% " + (100 - time) + "%, 0 " + (100 - time) + "%"
-   );
+// var time = 0;
 
-   if (time === 60) {
-     $(".loading_rose2").css('opacity', "1");
-   }
+//  function countDown() {
+//    time++;
+//    $(".loading").css(
+//      "clip-path",
+//      "polygon(0 100%, 100% 100%, 100% " + (100 - time) + "%, 0 " + (100 - time) + "%"
+//    );
 
-   // $("h2").text(time + "%")
-   if (time === 100) {
-     clearInterval(timer);
-     $(".loading_bg").addClass("done");
-     $("body").css('overflow', 'auto');
-     console.log($("body"));
-     $(".parent").removeClass("done");
+//    if (time === 60) {
+//      $(".loading_rose2").css('opacity', "1");
+//    }
+
+//    // $("h2").text(time + "%")
+//    if (time === 100) {
+//      clearInterval(timer);
+//      $(".loading_bg").addClass("done");
+//      $("body").css('overflow', 'auto');
+//      console.log($("body"));
+//      $(".parent").removeClass("done");
      
 
-     setTimeout(function () {
-       $(".loading_bg").css("display", "none");
-     }, 1000);
-   }
- }
+//      setTimeout(function () {
+//        $(".loading_bg").css("display", "none");
+//      }, 1000);
+//    }
+//  }
 
- var timer = setInterval(countDown, 0);
+//  var timer = setInterval(countDown, 50);
 
 
 // <------- navbar 隱藏+滑出 ------->
@@ -56,7 +56,7 @@ $(window).on("load", function () {
   }
 });
 
-// <------- navbar 錨點滑動效果 ------->
+// <------- navbar #錨點滑動效果 ------->
 
 $(function () {
 
@@ -64,6 +64,10 @@ $(function () {
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
+  .not('[href="#menu1"]')
+  .not('[href="#menu2"]')
+  .not('[href="#menu3"]')
+  .not('[href="#menu4"]')
   .click(function(event) {
       var target = $(this.hash);
       $('html,body').animate({
