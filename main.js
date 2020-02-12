@@ -31,7 +31,7 @@ var time = 0;
    }
  }
 
- var timer = setInterval(countDown, 50);
+ var timer = setInterval(countDown, 0);
 
 
 // <------- navbar 隱藏+滑出 ------->
@@ -54,6 +54,24 @@ $(window).on("load", function () {
     });
 
   }
+});
+
+// <------- navbar 錨點滑動效果 ------->
+
+$(function () {
+
+  $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+      var target = $(this.hash);
+      $('html,body').animate({
+          scrollTop: target.offset().top
+      }, 1500);
+      return false;
+  });
+
 });
 
 // <------- banner parallax -------> 
