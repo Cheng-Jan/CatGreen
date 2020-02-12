@@ -424,21 +424,21 @@ body {
 }
 
 .aboutMe .container .row .about1 {
-  background-color: #fbfad7;
+  width: auto;
   color: black;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
   font-size: 1.1rem;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-align: center;
+  line-height: 40px;
 }
 
 .aboutMe .container .row .about2 {
   width: 60%;
-  height: 60%;
-  background-color: #fbfad7;
+  height: 40%;
   color: black;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -450,7 +450,11 @@ body {
 }
 
 .aboutMe .container .row .about2 .about_name {
-  letter-spacing: 4px;
+  background-color: #fbfad7;
+  color: cadetblue;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 6px;
 }
 
 .aboutMe .container .row .about3 {
@@ -458,17 +462,16 @@ body {
   height: 90%;
 }
 
-.aboutMe .container .row .about4 {
+.aboutMe .container .row .about4 .about_title {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: upright;
   width: 100px;
-  height: 400px;
   line-height: 100px;
   color: gray;
   font-size: 1.6rem;
-  letter-spacing: 2px;
+  letter-spacing: 10px;
   font-weight: bold;
   text-align: center;
 }
@@ -483,7 +486,7 @@ body {
   width: 100%;
   color: gray;
   font-size: 1.6rem;
-  letter-spacing: 7px;
+  letter-spacing: 10px;
   font-weight: bold;
   text-align: center;
 }
