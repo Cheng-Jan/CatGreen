@@ -22,6 +22,7 @@ var time = 0;
      $(".loading_bg").addClass("done");
      $("body").css('overflow', 'auto');
      console.log($("body"));
+     $(".parent").removeClass("done");
      
 
      setTimeout(function () {
