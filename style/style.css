@@ -101,6 +101,15 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 991px) {
+  .header .link_a {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .header .link_a:hover {
   text-decoration: none;
 }
@@ -121,6 +130,15 @@ body {
   color: gray;
 }
 
+@media (max-width: 991px) {
+  .header .link_a .first_letter {
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    text-orientation: unset;
+  }
+}
+
 .header .link_a .hover_letter {
   width: 0;
   height: 0;
@@ -133,6 +151,18 @@ body {
           writing-mode: vertical-lr;
   text-orientation: upright;
   top: 32px;
+}
+
+@media (max-width: 991px) {
+  .header .link_a .hover_letter {
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    text-orientation: unset;
+    top: unset;
+    left: 13px;
+    letter-spacing: 4px;
+  }
 }
 
 .parent {
@@ -212,6 +242,15 @@ body {
   padding-top: 100px;
 }
 
+@media (max-width: 991px) {
+  .illustrations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .illustrations .illus_title {
   margin: 20px;
   -webkit-writing-mode: vertical-rl;
@@ -226,6 +265,20 @@ body {
   letter-spacing: 2px;
   font-weight: bold;
   text-align: center;
+}
+
+@media (max-width: 991px) {
+  .illustrations .illus_title {
+    margin: 0;
+    padding: 20px;
+    -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+            writing-mode: unset;
+    text-orientation: unset;
+    width: 100%;
+    height: 20px;
+    line-height: 50px;
+  }
 }
 
 .illustrations .container {
