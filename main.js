@@ -23,7 +23,7 @@ window.onbeforeunload = function () {
 //      $("body").css('overflow', 'auto');
 //      console.log($("body"));
 //      $(".parent").removeClass("done");
-     
+
 
 //      setTimeout(function () {
 //        $(".loading_bg").css("display", "none");
@@ -61,20 +61,20 @@ $(window).on("load", function () {
 $(function () {
 
   $('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .not('[href="#menu1"]')
-  .not('[href="#menu2"]')
-  .not('[href="#menu3"]')
-  .not('[href="#menu4"]')
-  .click(function(event) {
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .not('[href="#menu1"]')
+    .not('[href="#menu2"]')
+    .not('[href="#menu3"]')
+    .not('[href="#menu4"]')
+    .click(function (event) {
       var target = $(this.hash);
       $('html,body').animate({
-          scrollTop: target.offset().top
+        scrollTop: target.offset().top
       }, 1500);
       return false;
-  });
+    });
 
 });
 
@@ -135,9 +135,90 @@ const swiper1 = new Swiper('.illustration_swiper', {
 
 });
 
+// <------- 作品集 手機板 Swiper------->
+
+// const swiper_illus_mobile = new Swiper('.illus_swiper_mobile', {
+//   effect: 'flip',
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   loop: true,
+// });
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  loop: true,
+  freeMode: true,
+  loopedSlides: 5, //looped slides should be the same
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  loop: true,
+  loopedSlides: 5, //looped slides should be the same
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+});
+
 // <------ 商店 > 手提袋 Swiper ------>
 
 var swiper2 = new Swiper('.tabs_swiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// <------ 商店 > menu2 Swiper ------>
+
+var swiper_menu2 = new Swiper('.shop_menu2_swiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// <------ 商店 > menu3 Swiper ------>
+
+var swiper_menu3 = new Swiper('.shop_menu3_swiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  // loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// <------ 商店 > menu4 Swiper ------>
+
+var swiper_menu4 = new Swiper('.shop_menu4_swiper', {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
