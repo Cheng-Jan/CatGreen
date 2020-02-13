@@ -2,8 +2,13 @@
 body {
     background-color: white;
     margin: 0px;
-    // overflow: hidden;
+    overflow: hidden;
     // font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
+// arrow 顏色 //
+:root {
+    --swiper-theme-color: white;
 }
 
 //  ------------- loading_page start --------------- //
@@ -23,6 +28,16 @@ body {
     position: absolute;
     overflow-y: hidden;
     z-index: 99999;
+
+    @media (max-width: 991px) {
+        height: 500px;
+        top: calc(50% - 250px);
+    }
+
+    @media (max-width: 575px) {
+        height: 350px;
+        top: calc(50% - 175px);
+    }
 }
 
 .done {
@@ -88,7 +103,7 @@ body {
         border-top: 2px solid gray !important;
     
         @media (max-width: 991px) {
-            
+            border-top: none !important;
 
         }
     }
@@ -101,6 +116,7 @@ body {
 
         @media (max-width: 991px){
             flex-direction: row;
+            
         }
 
         &:hover {
@@ -143,6 +159,11 @@ body {
                 top: unset;
                 left: 13px;
                 letter-spacing: 4px;
+                width: auto;
+                height: auto;
+                cursor: pointer;
+                pointer-events: auto;
+                color: gray;
             }
         }
     }
@@ -259,6 +280,12 @@ body {
 
         @media (min-width: 1800px) {
             max-width: 1740px;
+        }
+    }
+
+    .illustration_swiper {
+        @media (max-width: 991px) {
+            display: none;
         }
     }
 
@@ -446,6 +473,11 @@ body {
 .illustrations_mobile {
     width: 100%;
     height: 100%;
+    display: none;
+
+    @media (max-width: 991px) {
+        display: inline-block;
+    }
 
     .illus_title_mobile {
         margin-left: 20px;
@@ -471,6 +503,10 @@ body {
     .gallery-thumbs {
         bottom: 3%;
         height: 30%;
+
+        @media (max-width:575px) {
+            height: 20%;
+        }
 
         .thumbs_style{
             height: 100%;
@@ -509,48 +545,100 @@ body {
             height: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;;
+            justify-content: space-around;
+            ;
             align-items: center;
 
-            .about1 {
-                // background-color: #fbfad7;
-                width: auto;
-                color: black;
-                writing-mode: vertical-rl;
-                text-orientation: upright;
-                font-size: 1.1rem;
-                letter-spacing: 4px;
-                // font-weight: bold;
-                text-align: center;
-                line-height: 40px;
+            @media (max-width: 575px) {
+                margin-left: 0px;
             }
 
-            .about2 {
-                width: 60%;
-                height: 40%;
-                // background-color: #fbfad7;
+            .about1 {
+                width: 100%;
+                // width: 60%;
                 color: black;
                 writing-mode: vertical-rl;
                 text-orientation: upright;
                 font-size: 1.2rem;
-                letter-spacing: 3px;
-                // font-weight: bold;
+                letter-spacing: 4px;
                 text-align: center;
+                line-height: 40px;                
+
+                @media (max-width: 575px) {
+                    order: 2;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                }
 
                 .about_name {
+                    padding: 6px;
+                    margin-left: 20px;
                     background-color: #fbfad7;
                     color: cadetblue;
                     font-size: 1.4rem;
                     font-weight: bold;
                     letter-spacing: 6px;
+
+                    @media (max-width: 991px) {
+                        font-size: 1.1rem;
+                        padding: 4px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 1rem;
+                    }
+
+
                 }
+
+                .about_content {
+
+                    @media (max-width: 991px) {
+                        font-size: 1rem;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+
+                    @media (max-width: 575px) {
+                        line-height: 30px;
+                    }
+
+                    .murmur {
+                        padding-right: 60px;
+
+                        @media (max-width: 1200px) {
+                            padding-right: 40px;
+                        }
+
+                        @media (max-width: 991px) {
+                            padding-right: 30px;
+                        }
+
+                        @media (max-width: 900px) {
+                            padding-right: 25px;
+                        }
+
+                    }
+                }
+
             }
 
-            .about3 {
+            .about2 {
                 width: 100%;
                 height: 100%;
                 display: flex;
                 align-items: center;
+
+                @media (max-width: 575px) {
+                    order: 3;
+                    width: 66%;
+                    height: 66%;
+                }
 
                 .shake {
                     animation-duration: 20s;
@@ -560,7 +648,11 @@ body {
 
             }
 
-            .about4 {
+            .about3 {
+
+                @media (max-width: 575px) {
+                    order: 1;
+                }
 
                 .about_title {
                     writing-mode: vertical-rl;
@@ -573,6 +665,23 @@ body {
                     letter-spacing: 10px;
                     font-weight: bold;
                     text-align: center;
+
+                    @media (max-width: 991px) {
+                        font-size: 1.3rem;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 1.2rem;
+                    }
+
+                    @media (max-width: 575px) {
+                        font-size: 1.1rem;
+                        writing-mode: unset;
+                        text-orientation: unset;
+                        width: 100%;
+                        line-height: unset;
+                        padding: 20px;
+                    }
                 }
             }
         }
@@ -608,10 +717,10 @@ body {
         text-align: center;
     }
 
-    // arrow 顏色 //
-    :root {
-        --swiper-theme-color: white;
-    }
+    // // arrow 顏色 //
+    // :root {
+    //     --swiper-theme-color: white;
+    // }
 
 
     // button 顏色微調
@@ -856,14 +965,13 @@ body {
     justify-content: center;
     align-items: center;
 
-    // @media (max-width: 576px) {
-    //     height: auto;
-    // }
+    @media (max-width: 576px) {
+        height: auto;
+    }
 
     .container {
         // background-color: #fff;
-        width: 50%;
-        height: 70%;
+        width: 100%;
 
         .row {
             width: 100%;
@@ -876,7 +984,7 @@ body {
                 padding-bottom: 100%;
                 background-image: url('../images/contactme.jpg');
                 // background-size: cover;
-                background-size: 100%;
+                background-size: 80%;
                 background-position: center center;
                 background-repeat: no-repeat;
                 // padding-right: 20px;
@@ -952,6 +1060,7 @@ body {
 
 // ---------- contact 聯絡我  end ----------- //
 
+
 // ---------- footer 頁尾 start ----------- //
 
 .footer {
@@ -975,6 +1084,9 @@ body {
             font-size: 1rem;
             letter-spacing: 4px;
 
+            @media (max-width: 576px) {
+                font-size: 10px;
+            }
 
         }
     }

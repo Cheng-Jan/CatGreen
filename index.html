@@ -29,10 +29,10 @@
     <!-------    loading page 進站動畫   -------->
     <!------------------------------------------>
 
-    <!-- <div class="loading_bg">
+    <div class="loading_bg">
         <div class="loading"></div>
         <div class="loading_rose2"></div>
-    </div> -->
+    </div>
 
     <!------------------------------------------>
     <!------- header navbar導覽列  start -------->
@@ -67,14 +67,14 @@
             <form class="form-inline my-2 my-lg-0">
               <ul class="navbar-nav mr-auto">
                 <li>
-                  <div class="border-top border-dark link_border"></div>
+                  <div class="border-dark link_border"></div>
                   <a class="d-flex link_a position-relative" href="#Banner">
                     <span class="first_letter">H</span>
                     <span class="hover_letter position-absolute">OME</span>
                   </a>
                 </li>
                 <li>
-                  <div class="link_border border-top border-dark"></div>
+                  <div class="link_border border-dark"></div>
                   <a class="d-flex link_a position-relative" href="#Illu">
                     <span class="first_letter">I</span>
                     <span class="hover_letter position-absolute"
@@ -83,21 +83,21 @@
                   </a>
                 </li>
                 <li>
-                  <div class="link_border border-top border-dark"></div>
+                  <div class="link_border border-dark"></div>
                   <a class="d-flex link_a position-relative" href="#About">
                     <span class="first_letter">A</span>
                     <span class="hover_letter position-absolute">BOUT</span>
                   </a>
                 </li>
                 <li>
-                  <div class="link_border border-top border-dark"></div>
+                  <div class="link_border border-dark"></div>
                   <a class="d-flex link_a position-relative" href="#Store">
                     <span class="first_letter">S</span>
                     <span class="hover_letter position-absolute">TORE</span>
                   </a>
                 </li>
                 <li>
-                  <div class="link_border border-top border-dark"></div>
+                  <div class="link_border border-dark"></div>
                   <a class="d-flex link_a position-relative" href="#Contact">
                     <span class="first_letter">C</span>
                     <span class="hover_letter position-absolute">ONTACT</span>
@@ -117,7 +117,7 @@
     <!------------ banner 首頁 start ------------>
     <!------------------------------------------>
 
-    <div class="parent" id="Banner">
+    <div class="parent done" id="Banner">
       <!-- // 第一層 // -->
       <div
         data-calibrate-x="false"
@@ -203,8 +203,8 @@
     <!------------------------------------------>
 
     <div class="illustrations" id="Illu">
-      <div class="illustrations_website d-none">
-        <div class="illus_title">ILLUSTRATION</div>
+      <!-- <div class="illustrations_website"> -->
+        <div class="illus_title wow fadeInLeft slower"  data-wow-duration:="3s">ILLUSTRATION</div>
         <div class="container">
           <div class="swiper-container illustration_swiper">
             <div class="swiper-wrapper">
@@ -269,10 +269,9 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
 
       <div class="illustrations_mobile">
-        <div class="illus_title_mobile">ILLUSTRATION</div>
 
         <div class="swiper-container gallery-top illus_swiper_mobile">
           <div class="swiper-wrapper">
@@ -497,55 +496,39 @@
     <!------------------------------------------>
 
     <div class="aboutMe" id="About">
-      <div class="clippy"></div>
-      <div class="container">
-        <div class="row">
-          <div class="about1 col-sm-4 wow fadeInUp slower">
-            <div>自由插畫工作者</div>
+        <div class="clippy"></div>
+        <div class="container">
+            <div class="row">
+                <div class="about1 col-sm-6 wow fadeInUp slower">
 
-            <div>／ ILLUSTRATION</div>
+                    <div class="about_name">
+                        <div>Vera Wu</div>
+                    </div>
 
-            <div>／ DESIGN</div>
+                    <div class="about_content">
+                        <div>自由插畫工作者</div>
+                        <div>／ ILLUSTRATION</div>
+                        <div>／ DESIGN</div>
+                        <div>／ PHOTOGRAPHY</div>
+                        <div class="murmur">
+                            <div class="wow fadeInLeft slower" data-wow-duration="3s" data-wow-delay="1s"
+                                style="color: cadetblue;">讓肥嘟嘟的貓咪植物插畫</div>
+                            <div class="wow fadeInLeft slower" data-wow-duration="3s" data-wow-delay="2s"
+                                style="color: cadetblue;">照亮彼此的小小星球吧！</div>
+                        </div>
+                    </div>
 
-            <div>／ PHOTOGRAPHY</div>
-            <br />
-            <div
-              class="wow fadeInLeft slower"
-              data-wow-duration="3s"
-              data-wow-delay="1s"
-            >
-              讓肥嘟嘟的貓咪植物插畫
+                </div>
+                <div class="about2 col-sm-5">
+                    <img class="rounded-circle animated shake slower" src="images/head.jpg" alt="Vera Wu" width="100%">
+                </div>
+                <div class="about3 col-sm-1">
+                    <div class="about_title wow fadeInRight slower" data-wow-duration:="3s">ABOUT</div>
+                </div>
             </div>
-            <div
-              class="wow fadeInLeft slower"
-              data-wow-duration="3s"
-              data-wow-delay="2s"
-            >
-              照亮彼此的小小星球吧！
-            </div>
-          </div>
-          <div class="about2 col-sm-1">
-            <div class="about_name">Vera Wu</div>
-          </div>
-          <div class="about3 col-sm-6">
-            <img
-              class="rounded-circle animated shake slower"
-              src="images/head.jpg"
-              alt="Vera Wu"
-              width="100%"
-            />
-          </div>
-          <div class="about4 col-sm-1">
-            <div
-              class="about_title wow fadeInRight slower"
-              data-wow-duration:="3s"
-            >
-              ABOUT
-            </div>
-          </div>
         </div>
-      </div>
     </div>
+
     <!------------------------------------------>
     <!-----------  about 關於我  end  ----------->
     <!------------------------------------------>
@@ -1233,7 +1216,6 @@
         </div>
       </div>
     </div>
-
     <!------------------------------------------>
     <!---------- contact 聯絡我   end  ---------->
     <!------------------------------------------>

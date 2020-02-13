@@ -3,35 +3,35 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
-// var time = 0;
+var time = 0;
 
-//  function countDown() {
-//    time++;
-//    $(".loading").css(
-//      "clip-path",
-//      "polygon(0 100%, 100% 100%, 100% " + (100 - time) + "%, 0 " + (100 - time) + "%"
-//    );
+ function countDown() {
+   time++;
+   $(".loading").css(
+     "clip-path",
+     "polygon(0 100%, 100% 100%, 100% " + (100 - time) + "%, 0 " + (100 - time) + "%"
+   );
 
-//    if (time === 60) {
-//      $(".loading_rose2").css('opacity', "1");
-//    }
+   if (time === 60) {
+     $(".loading_rose2").css('opacity', "1");
+   }
 
-//    // $("h2").text(time + "%")
-//    if (time === 100) {
-//      clearInterval(timer);
-//      $(".loading_bg").addClass("done");
-//      $("body").css('overflow', 'auto');
-//      console.log($("body"));
-//      $(".parent").removeClass("done");
+   // $("h2").text(time + "%")
+   if (time === 100) {
+     clearInterval(timer);
+     $(".loading_bg").addClass("done");
+     $("body").css('overflow', 'auto');
+     console.log($("body"));
+     $(".parent").removeClass("done");
 
 
-//      setTimeout(function () {
-//        $(".loading_bg").css("display", "none");
-//      }, 1000);
-//    }
-//  }
+     setTimeout(function () {
+       $(".loading_bg").css("display", "none");
+     }, 1000);
+   }
+ }
 
-//  var timer = setInterval(countDown, 50);
+ var timer = setInterval(countDown, 50);
 
 
 // <------- navbar 隱藏+滑出 ------->
