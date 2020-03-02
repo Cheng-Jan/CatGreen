@@ -974,12 +974,12 @@ body {
   right: 0;
 }
 
-.shop_menu2_swiper {
+.shop_menu2_mobile {
   display: none;
 }
 
 @media (max-width: 576px) {
-  .shop_menu2_swiper {
+  .shop_menu2_mobile {
     display: initial;
   }
 }

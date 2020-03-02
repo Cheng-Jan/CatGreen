@@ -933,7 +933,15 @@ body {
 }
 
 
-.shop_menu2_swiper {
+// .shop_menu2_swiper {
+//     display: none;
+
+//     @media (max-width:576px){
+//         display: initial;
+//     }
+// }
+
+.shop_menu2_mobile {
     display: none;
 
     @media (max-width:576px){
