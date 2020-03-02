@@ -7,13 +7,13 @@ var time = 0;
 
  function countDown() {
    time++;
-   $(".loading").css(
+   $(".loading_stem").css(
      "clip-path",
      "polygon(0 100%, 100% 100%, 100% " + (100 - time) + "%, 0 " + (100 - time) + "%"
    );
 
    if (time === 60) {
-     $(".loading_rose2").css('opacity', "1");
+     $(".loading_rose").css('opacity', "1");
    }
 
    // $("h2").text(time + "%")

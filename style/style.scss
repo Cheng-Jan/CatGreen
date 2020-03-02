@@ -45,10 +45,10 @@ body {
     opacity: 0;
 }
 
-.loading {
+.loading_stem {
     width: 100%;
     height: 100%;
-    background-image: url("../loading_page/Rose2.png");
+    background-image: url("../loading_page/stem.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@ body {
 
 }
 
-.loading_rose2 {
+.loading_rose {
     width: 100%;
     height: 100%;
     background-image: url("../loading_page/Rose.png");
@@ -834,7 +834,6 @@ body {
 
     .tab-pane{
         
-
         p {
             // height: calc(100vh - 106px - 38px - 40px);
             display: block;
