@@ -186,19 +186,27 @@ var swiper2 = new Swiper('.tabs_swiper', {
 
 // <------ 商店 > menu2 Swiper ------>
 
-var swiper_menu2 = new Swiper('.shop_menu2_swiper', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+// var swiper_menu2 = new Swiper('.shop_menu2_swiper', {
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   loop: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
+
+$(document).ready(function(){
+  $('.shop_menu2_mobile').slick({
+    "setting-name": "setting-value"
+  });
 });
+
+
 
 // <------ 商店 > menu3 Swiper ------>
 

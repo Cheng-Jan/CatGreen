@@ -980,7 +980,7 @@ body {
 
 @media (max-width: 576px) {
   .shop_menu2_swiper {
-    display: inline-block;
+    display: initial;
   }
 }
 
