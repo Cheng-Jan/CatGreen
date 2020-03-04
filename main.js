@@ -68,6 +68,9 @@ $(function () {
     .not('[href="#menu2"]')
     .not('[href="#menu3"]')
     .not('[href="#menu4"]')
+    .not('[href="#carouselExampleControls"]')
+    .not('[href="#carouselExampleControls3"]')
+    .not('[href="#carouselExampleControls4"]')
     .click(function (event) {
       var target = $(this.hash);
       $('html,body').animate({
@@ -214,27 +217,27 @@ var swiper2 = new Swiper('.tabs_swiper', {
 
 // <------ 商店 > menu3 Swiper ------>
 
-var swiper_menu3 = new Swiper('.shop_menu3_swiper', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+// var swiper_menu3 = new Swiper('.shop_menu3_swiper', {
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
 
-$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
-  var paneTarget = $(e.target).attr('href');
-  var $thePane = $('.tab-pane' + paneTarget);
-  var paneIndex = $thePane.index();
-  if ($thePane.find('.swiper-container').length > 0 && 0 === $thePane.find('.swiper-slide-active').length) {
-    swiper_menu3[paneIndex].update();
-  }
-});
+// $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+//   var paneTarget = $(e.target).attr('href');
+//   var $thePane = $('.tab-pane' + paneTarget);
+//   var paneIndex = $thePane.index();
+//   if ($thePane.find('.swiper-container').length > 0 && 0 === $thePane.find('.swiper-slide-active').length) {
+//     swiper_menu3[paneIndex].update();
+//   }
+// });
 
 // VisSense(swiper_menu3.el).monitor({
 //   visible: function() {
@@ -257,19 +260,19 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
 
 // <------ 商店 > menu4 Swiper ------>
 
-var swiper_menu4 = new Swiper('.shop_menu4_swiper', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+// var swiper_menu4 = new Swiper('.shop_menu4_swiper', {
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   loop: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
 
 // <------ 商店 > 手提袋 button 連結網址 ------>
 

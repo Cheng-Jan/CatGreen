@@ -941,11 +941,9 @@ body {
 //     }
 // }
 
-.shop_menu2_mobile {
-    display: none;
-
-    @media (max-width:576px){
-        display: initial;
+.menu2_mobile {
+    @media (min-width:577px){
+        display: none;
     }
 }
 
@@ -955,11 +953,9 @@ body {
     }
 }
 
-.shop_menu3_swiper {
-    display: none;
-
-    @media (max-width:576px) {
-        display: inline-block;
+.menu3_mobile {
+    @media (min-width:577px){
+        display: none;
     }
 }
 
@@ -969,11 +965,9 @@ body {
     }
 }
 
-.shop_menu4_swiper {
-    display: none;
-
-    @media (max-width:576px) {
-        display: inline-block;
+.menu4_mobile {
+    @media (min-width:577px){
+        display: none;
     }
 }
 

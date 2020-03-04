@@ -974,13 +974,9 @@ body {
   right: 0;
 }
 
-.shop_menu2_mobile {
-  display: none;
-}
-
-@media (max-width: 576px) {
-  .shop_menu2_mobile {
-    display: initial;
+@media (min-width: 577px) {
+  .menu2_mobile {
+    display: none;
   }
 }
 
@@ -990,13 +986,9 @@ body {
   }
 }
 
-.shop_menu3_swiper {
-  display: none;
-}
-
-@media (max-width: 576px) {
-  .shop_menu3_swiper {
-    display: inline-block;
+@media (min-width: 577px) {
+  .menu3_mobile {
+    display: none;
   }
 }
 
@@ -1006,13 +998,9 @@ body {
   }
 }
 
-.shop_menu4_swiper {
-  display: none;
-}
-
-@media (max-width: 576px) {
-  .shop_menu4_swiper {
-    display: inline-block;
+@media (min-width: 577px) {
+  .menu4_mobile {
+    display: none;
   }
 }
 
