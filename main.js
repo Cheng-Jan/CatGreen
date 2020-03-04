@@ -200,12 +200,15 @@ var swiper2 = new Swiper('.tabs_swiper', {
 //   },
 // });
 
-$(document).ready(function(){
-  $('.shop_menu2_mobile').slick({
-    "setting-name": "setting-value"
-  });
-});
-
+// $(document).ready(function(){
+//   $('.shop_menu2_mobile').slick({
+//     // dots: true,
+//     infinite: true,
+//     speed: 600,
+//     fade: true,
+//     cssEase: 'linear'
+//   });
+// });
 
 
 // <------ 商店 > menu3 Swiper ------>
@@ -223,6 +226,34 @@ var swiper_menu3 = new Swiper('.shop_menu3_swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// $('a[data-toggle="pill"]').on('shown.bs.tab', function(e) {
+//   var paneTarget = $(e.target).attr('href');
+//   var $thePane = $('.tab-pane' + paneTarget);
+//   var paneIndex = $thePane.index();
+//   if ($thePane.find('.swiper-container').length > 0 && 0 === $thePane.find('.swiper-slide-active').length) {
+//     swiper_menu3[paneIndex].update();
+//   }
+// });
+
+// VisSense(swiper_menu3.el).monitor({
+//   visible: function() {
+//     swiper_menu3.update();
+//   },
+// }).start();
+
+// document.querySelector('selector-for-an-element-with-swiper').swiper_menu3.update()
+
+// $(".nav-pills").on("click",function(){ 
+//   reinitializeSwiper(swiper);
+// });
+
+// function reinitializeSwiper(swiper) {
+//    setTimeout(function () {
+//     swiper_menu3.update();       
+//    }, 400);
+// }
+
 
 // <------ 商店 > menu4 Swiper ------>
 
