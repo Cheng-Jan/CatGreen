@@ -168,7 +168,7 @@ var galleryTop = new Swiper('.gallery-top', {
   },
 });
 
-// <------ 商店 > 手提袋 Swiper ------>
+// <------ 商店 > menu1 手提袋 Swiper ------>
 
 var swiper2 = new Swiper('.tabs_swiper', {
   slidesPerView: 1,
@@ -211,12 +211,12 @@ var swiper2 = new Swiper('.tabs_swiper', {
 // });
 
 
+
 // <------ 商店 > menu3 Swiper ------>
 
 var swiper_menu3 = new Swiper('.shop_menu3_swiper', {
   slidesPerView: 1,
   spaceBetween: 30,
-  // loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -227,14 +227,14 @@ var swiper_menu3 = new Swiper('.shop_menu3_swiper', {
   },
 });
 
-// $('a[data-toggle="pill"]').on('shown.bs.tab', function(e) {
-//   var paneTarget = $(e.target).attr('href');
-//   var $thePane = $('.tab-pane' + paneTarget);
-//   var paneIndex = $thePane.index();
-//   if ($thePane.find('.swiper-container').length > 0 && 0 === $thePane.find('.swiper-slide-active').length) {
-//     swiper_menu3[paneIndex].update();
-//   }
-// });
+$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+  var paneTarget = $(e.target).attr('href');
+  var $thePane = $('.tab-pane' + paneTarget);
+  var paneIndex = $thePane.index();
+  if ($thePane.find('.swiper-container').length > 0 && 0 === $thePane.find('.swiper-slide-active').length) {
+    swiper_menu3[paneIndex].update();
+  }
+});
 
 // VisSense(swiper_menu3.el).monitor({
 //   visible: function() {
